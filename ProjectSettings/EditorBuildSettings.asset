@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MamasScene.unity
     guid: 0f91601cb0cbc5f469aa376906daf641
+  - enabled: 1
+    path: Assets/Scenes/WakeUp.unity
+    guid: 94d369e1c75423f489250f21ca24814c
   m_configObjects: {}
