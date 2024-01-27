@@ -15,7 +15,7 @@ public class ShearBehaviour : MonoBehaviour
     [Header("Unity")]
     [SerializeField] private List<Collider> wool = new List<Collider>();
 
-    [HideInInspector] public bool HasBeenSheered=false;
+    [HideInInspector] public bool HasBeenSheered = false;
 
     protected virtual void OnTriggerEnter(Collider collision)
     {
@@ -24,6 +24,7 @@ public class ShearBehaviour : MonoBehaviour
         if (tag.Equals("Player"))
         {
             InputManager.Instance.Shear.started += ShearSheep;
+            Debug.Log("entered sheep zone");
         }
 
     }
@@ -35,6 +36,7 @@ public class ShearBehaviour : MonoBehaviour
         if (tag.Equals("Player"))
         {
             InputManager.Instance.Shear.started -= ShearSheep;
+            Debug.Log("exited sheep zone");
         }
     }
 
@@ -42,24 +44,19 @@ public class ShearBehaviour : MonoBehaviour
     {
         if(HasBeenSheered)
         {
-            return;
-        }
-        HasBeenSheered = true;
-
-
-        foreach (Collider ball in wool)
-        {
-            //turn all colliders on
-        }
-        //uhhhhh find a better place for this
-            AudioSource.PlayClipAtPoint(shearSound, transform.position, 100);
-         
-       // if (/*already sheared*/)
-        {
             AudioSource.PlayClipAtPoint(noShearSound, transform.position, 100);
             Debug.Log("sorry, no more wool");
             return;
         }
+
+        HasBeenSheered = true;
+        AudioSource.PlayClipAtPoint(shearSound, transform.position, 100);
+
+        foreach (SphereCollider ball in wool)
+        {
+            ball.enabled = true;
+            Debug.Log("shearing...");
+        }   
     }
 
 
