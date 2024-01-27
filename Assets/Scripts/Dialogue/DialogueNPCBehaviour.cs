@@ -74,7 +74,7 @@ public class DialogueNPCBehaviour : MonoBehaviour
         PlayerController.Instance.IgnoreAllInputs = true;
         InputManager.Instance.Talk.started -= ActivateSpeech;
         InputManager.Instance.Pause.started += Exit_text;
-        InputManager.Instance.SkipText.started += Skip_text;
+        
     }
 
     public virtual void Exit_text(InputAction.CallbackContext obj)
@@ -84,18 +84,11 @@ public class DialogueNPCBehaviour : MonoBehaviour
 
     public void LeaveText()
     {
+        Debug.Log("leaving text");
         DialogueCanvas.Instance.CancelSpeech();
 
         PlayerController.Instance.IgnoreAllInputs = false;
         InputManager.Instance.Pause.started -= Exit_text;
-        InputManager.Instance.SkipText.started -= Skip_text;
-    }
-
-    public void Skip_text(InputAction.CallbackContext obj)
-    {
-        DialogueCanvas.Instance.SkipText = false;
-
-        if (DialogueCanvas.Instance.typing)
-            DialogueCanvas.Instance.SkipText = true;
+        //InputManager.Instance.SkipText.started -= DialogueCanvas.Instance.Skip_text;
     }
 }

@@ -73,7 +73,7 @@ public class DialogueCanvas : MonoBehaviour
 
     public void LoadScript(NPCScript script, DialogueNPCBehaviour sheep)
     {
-        if (script == null || sheep == null)
+        if (script == null)
         {
             return;
         }
@@ -96,6 +96,7 @@ public class DialogueCanvas : MonoBehaviour
         Debug.Log("Activating speech");
 
         PlayerController.Instance.IgnoreAllInputs = true;
+        
 
         if (!typing)
         {
@@ -109,6 +110,8 @@ public class DialogueCanvas : MonoBehaviour
     public virtual void CancelSpeech()
     {
         Debug.Log("Cancelling speech");
+
+        PlayerController.Instance.IgnoreAllInputs = false;
 
         textIndex = 0;
         if (ControlPromptCanvas != null)
@@ -125,6 +128,16 @@ public class DialogueCanvas : MonoBehaviour
     public virtual IEnumerator StartText()
     {
         yield return new WaitForSeconds(ScrollSpeed);
+
+        Debug.Log("start text, "+ textIndex);
+
+        InputManager.Instance.SkipText.started += Skip_text;
+
+        if (textIndex >= TextList.Count)
+        {
+            CancelSpeech();
+            yield break;
+        }
 
         typing = true;
         dialogueCanvas.SetActive(true);
@@ -143,7 +156,7 @@ public class DialogueCanvas : MonoBehaviour
                 textBox.text = TextList[textIndex];
                 break;
             }
-
+           
             textBox.text = TextList[textIndex].Substring(0, i);
 
             PlayTalkingSound();
@@ -151,8 +164,12 @@ public class DialogueCanvas : MonoBehaviour
             yield return new WaitForSeconds(ScrollSpeed);
         }
 
+        Debug.Log("done typing");
         typing = false;
-        textIndex++;
+        
+
+        InputManager.Instance.SkipText.started -= Skip_text;
+        InputManager.Instance.SkipText.started += Next_Text;
     }
 
     private void PlayTalkingSound()
@@ -163,5 +180,28 @@ public class DialogueCanvas : MonoBehaviour
         dialogueSoundSource.Stop();
         dialogueSoundSource.pitch = Random.value;
         dialogueSoundSource.Play();
+    }
+
+    public void Skip_text(InputAction.CallbackContext obj)
+    {
+        Debug.Log("skipping text");
+        SkipText = true;
+
+        /*
+        if (typing)
+        {
+            Debug.Log("skip text true");
+            SkipText = true;
+            return;
+        }
+        */
+    }
+
+    public void Next_Text(InputAction.CallbackContext obj)
+    {
+        Debug.Log("next text");
+        textIndex++;
+        StartCoroutine(StartText());
+        InputManager.Instance.SkipText.started -= Next_Text;
     }
 }
