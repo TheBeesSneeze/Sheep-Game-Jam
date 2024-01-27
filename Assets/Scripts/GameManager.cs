@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public void LoadGame()
     {
         SceneManager.LoadScene("MamasScene");
+        PlayerController.Instance.UnPause();
     }
 
     public void QuitGame()
@@ -33,8 +34,14 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void Resume()
+    {
+        PlayerController.Instance.UnPause();
+    }
+
     public void LoadWakeUpScene()
     {
         SceneManager.LoadScene("WakeUp");
+        PlayerController.Instance.UnPause();
     }
 }
