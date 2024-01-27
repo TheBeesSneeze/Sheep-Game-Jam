@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 70, y: 60}
+  m_AnchoredPosition: {x: 70, y: 202}
   m_SizeDelta: {x: 1419.143, y: 397.456}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &281582541
@@ -181,13 +181,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ah...cool sheep, normal sheep, angel sheep, mama sheep, baby sheep, skater
-    sheep, greedy sheep, bahlter white, dinnerbone sheep, unfinished sheet, jeb sheep,
-    naked sheep, tophat sheep. Wait...that's one more than usual. I should look into
-    this.
+  m_text: Ah...COOL shEEP, nOrmAl sheep, Angel sheep, mAmA sheep, bAby sheep, skAter
+    sheep, bAhlter whIte, upsIde-dOwn sheep, CAmOflAuge sheep, RAINBOW sheep, nAked
+    sheep, CARDBOARD CUTOUT sheep, ABRAHAM LINCOLN sheep, REALLY TALL sheep, And
+    <SHEEP_NAME_MISSING>. WAIt...thAt's One mOre thAn usuAl. I shOuld lOOk IntO thIs.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 143815bd107bd76438214801ec8c1eae, type: 2}
+  m_sharedMaterial: {fileID: -4259932484926644012, guid: 143815bd107bd76438214801ec8c1eae, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -693,7 +693,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -211}
+  m_AnchoredPosition: {x: 0, y: -323}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1643170921
@@ -942,10 +942,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Wake Up
+  m_text: WAke Up
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 143815bd107bd76438214801ec8c1eae, type: 2}
+  m_sharedMaterial: {fileID: -4259932484926644012, guid: 143815bd107bd76438214801ec8c1eae, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
