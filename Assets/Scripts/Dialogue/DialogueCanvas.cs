@@ -82,18 +82,6 @@ public class DialogueCanvas : MonoBehaviour
         CharacterDialogueSound = script.CharacterDialogueSound;
     }
 
-    public virtual void CancelSpeech()
-    {
-        Debug.Log("Cancelling speech");
-
-        textIndex = 0;
-        if (ControlPromptCanvas != null)
-            ControlPromptCanvas.SetActive(true);
-
-        if (dialogueCanvas != null)
-            dialogueCanvas.SetActive(false);
-    }
-
     public virtual void ActivateSpeech()
     {
         Debug.Log("Activating speech");
@@ -107,6 +95,18 @@ public class DialogueCanvas : MonoBehaviour
 
         if (ControlPromptCanvas != null)
             ControlPromptCanvas.SetActive(false);
+    }
+
+    public virtual void CancelSpeech()
+    {
+        Debug.Log("Cancelling speech");
+
+        textIndex = 0;
+        if (ControlPromptCanvas != null)
+            ControlPromptCanvas.SetActive(true);
+
+        if (dialogueCanvas != null)
+            dialogueCanvas.SetActive(false);
     }
 
     /// <summary>

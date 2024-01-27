@@ -40,6 +40,12 @@ public class ShearBehaviour : MonoBehaviour
 
     public void ShearSheep(InputAction.CallbackContext obj)
     {
+        if(HasBeenSheered)
+        {
+
+        }
+
+
         foreach (Collider ball in wool)
         {
             //turn all colliders on
