@@ -109,7 +109,10 @@ public class PlayerController : MonoBehaviour
 
     public void UnPause()
     {
-        PauseScreen.SetActive(false);
+        if(PauseScreen != null)
+        {
+            PauseScreen.SetActive(false);
+        }
         Pause = false;
         Cursor.visible = false;
         IgnoreAllInputs = false;
