@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private Transform cameraTransform;
 
     public bool Pause;
+    public GameObject PauseScreen;
     public bool IgnoreAllInputs;
 
     private float xMovement;
@@ -93,11 +94,13 @@ public class PlayerController : MonoBehaviour
         //Pause Stuff
         if (Pause)
         {
+            PauseScreen.SetActive(false);
             Pause = false;
             IgnoreAllInputs = false;
         }
         else
         {
+            PauseScreen.SetActive(true);
             Pause = true;
             IgnoreAllInputs = true;
         }
