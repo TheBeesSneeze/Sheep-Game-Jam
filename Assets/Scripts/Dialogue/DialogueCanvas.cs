@@ -83,7 +83,7 @@ public class DialogueCanvas : MonoBehaviour
 
         TextList = script.TextList;
 
-        characterName.text = script.CharacterName;
+        characterName.text = script.CharacterName.ToUpper();
 
         if(script.CharacterDialogueSound != null)
             CharacterDialogueSound = script.CharacterDialogueSound;
@@ -146,8 +146,11 @@ public class DialogueCanvas : MonoBehaviour
 
         characterName.text = currentScript.CharacterName;
 
+        string text = TextList[textIndex];
+        text.ToUpper();
+
         //typewriter text
-        for (int i = 0; i < TextList[textIndex].Length + 1; i++)
+        for (int i = 0; i < text.Length + 1; i++)
         {
             if (SkipText)
             {
