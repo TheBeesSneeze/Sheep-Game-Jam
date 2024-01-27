@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour
     public void LoadGame()
     {
         SceneManager.LoadScene("MamasScene");
+        PlayerController.Instance.UnPause();
     }
 
     public void QuitGame()
@@ -31,5 +33,11 @@ public class GameManager : MonoBehaviour
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Resume()
+    {
+        PlayerController.Instance.UnPause();
+
     }
 }

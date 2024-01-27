@@ -90,19 +90,28 @@ public class PlayerController : MonoBehaviour
 
     public void Pause_started(InputAction.CallbackContext obj)
     {
-        Debug.Log("Paused");
         //Pause Stuff
         if (Pause)
         {
             PauseScreen.SetActive(false);
             Pause = false;
+            Cursor.visible = false;
             IgnoreAllInputs = false;
         }
         else
         {
             PauseScreen.SetActive(true);
             Pause = true;
+            Cursor.visible = true;
             IgnoreAllInputs = true;
         }
+    }
+
+    public void UnPause()
+    {
+        PauseScreen.SetActive(false);
+        Pause = false;
+        Cursor.visible = false;
+        IgnoreAllInputs = false;
     }
 }
