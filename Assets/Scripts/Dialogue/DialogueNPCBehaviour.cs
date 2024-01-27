@@ -25,11 +25,13 @@ public class DialogueNPCBehaviour : MonoBehaviour
     /// when on speaking box, can start text
     /// </summary>
     /// <param name="collision"></param>
-    protected virtual void OnTriggerEnter2D(Collider2D collision)
+    protected virtual void OnTriggerEnter(Collider collision)
     {
         string tag = collision.gameObject.tag;
         if (tag.Equals("Player"))
         {
+            Debug.Log("baaa");
+
             if (DialogueCanvas.Instance.ControlPromptCanvas != null)
                 DialogueCanvas.Instance.ControlPromptCanvas.SetActive(true);
 
@@ -41,12 +43,14 @@ public class DialogueNPCBehaviour : MonoBehaviour
     /// when off speaking box, no start text
     /// </summary>
     /// <param name="collision"></param>
-    protected virtual void OnTriggerExit2D(Collider2D collision)
+    protected virtual void OnTriggerExit(Collider collision)
     {
         string tag = collision.gameObject.tag;
 
         if (tag.Equals("Player"))
         {
+            Debug.Log("baaa :(");
+
             if (DialogueCanvas.Instance.ControlPromptCanvas != null)
                 DialogueCanvas.Instance.ControlPromptCanvas.SetActive(false);
 
