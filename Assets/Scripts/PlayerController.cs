@@ -69,11 +69,13 @@ public class PlayerController : MonoBehaviour
         Camera.main.transform.localEulerAngles = new Vector3(-yMovement, 0f, 0f);
         transform.eulerAngles = new Vector3(0f, xMovement, 0f);
 
-        Vector3 movement = InputManager.Instance.GetPlayerMovement();
-        Vector3 move = new Vector3(movement.x, 0f, movement.y);
+        Vector3 movement = InputManager.Instance.GetPlayerMovement();//
+        Vector3 move = transform.TransformDirection(movement.x, 0f, movement.y);
+        controller.Move(move * Time.deltaTime * playerSpeed);
+
         //move = cameraTransform.forward * move.z + cameraTransform.right * move.x;
         //move.y = 0f;
-        controller.Move(move * Time.deltaTime * playerSpeed);
+
 
         // Changes the height position of the player..
         //if (inputManager.JumpStarted() && groundedPlayer)
