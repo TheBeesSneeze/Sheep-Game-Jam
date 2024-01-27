@@ -9,6 +9,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -20,43 +21,6 @@ public class NPCBehaviour : MonoBehaviour
     public NPCScript DefaultScript;
     public NPCScript SheeredScript;
 
-    public NPCScript CurrentScript { 
-        get { return CurrentScript; } 
-        set { LoadScript(value);  } 
-    }
-
-    private string characterName;
-    private AudioClip CharacterDialogueSound;
-
-    private List<string> TextList = new List<string>();
-
-    [Header("Settings")]
-    public bool LoopText;
-    public static float ScrollSpeed = 0.05f;
-    private float bobAnimationTime = 0.5f;
-
-    private bool SkipText;
-    public AudioSource dialogueSoundSource;
-
-    private int textIndex = 0;
-    private bool typing;
-
-    public virtual void Start()
-    {
-        PopulateCanvasVariables();
-
-        if (dialogueSoundSource == null)
-        {
-            dialogueSoundSource = DialogueCanvas.Instance.GetComponent<AudioSource>();
-        }
-
-        LoadScript(DialogueScripts);
-
-        if(ButtonPrompt != null)
-            ButtonPrompt.SetActive(false);
-    }
-
-
     /// <summary>
     /// when on speaking box, can start text
     /// </summary>
@@ -66,8 +30,8 @@ public class NPCBehaviour : MonoBehaviour
         string tag = collision.gameObject.tag;
         if (tag.Equals("Player"))
         {
-            if(ButtonPrompt != null)
-                ButtonPrompt.SetActive(true);
+            if (DialogueCanvas.Instance.ControlPromptCanvas != null)
+                DialogueCanvas.Instance.ControlPromptCanvas.SetActive(true);
 
             PlayerController.Instance.Select.started += ActivateSpeech;
         }
@@ -83,12 +47,43 @@ public class NPCBehaviour : MonoBehaviour
 
         if (tag.Equals("Player"))
         {
-            if (ButtonPrompt != null)
-                ButtonPrompt.SetActive(false);
+            if (DialogueCanvas.Instance.ControlPromptCanvas != null)
+                DialogueCanvas.Instance.ControlPromptCanvas.SetActive(false);
 
             PlayerController.Instance.Select.started -= ActivateSpeech;
         }
     }
 
-    
+    public void ActivateSpeech(InputAction.CallbackContext obj)
+    {
+        //PUT SHEER IF CONDITION STUFF STUFF HERE
+        DialogueCanvas.Instance.LoadScript(DefaultScript, this);
+
+        PlayerController.Instance.IgnoreAllInputs = true;
+        PlayerController.Instance.Select.started -= ActivateSpeech;
+        PlayerController.Instance.ExitText.started += Exit_text;
+        PlayerController.Instance.SkipText.started += Skip_text;
+    }
+
+    public virtual void Exit_text(InputAction.CallbackContext obj)
+    {
+        LeaveText();
+    }
+
+    public void LeaveText()
+    {
+        DialogueCanvas.Instance.CancelSpeech();
+
+        PlayerController.Instance.IgnoreAllInputs = false;
+        PlayerController.Instance.ExitText.started -= Exit_text;
+        PlayerController.Instance.SkipText.started -= Skip_text;
+    }
+
+    public void Skip_text(InputAction.CallbackContext obj)
+    {
+        DialogueCanvas.Instance.SkipText = false;
+
+        if (DialogueCanvas.Instance.typing)
+            DialogueCanvas.Instance.SkipText = true;
+    }
 }
