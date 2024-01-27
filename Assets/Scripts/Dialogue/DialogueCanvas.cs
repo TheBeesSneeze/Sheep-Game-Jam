@@ -36,7 +36,7 @@ public class DialogueCanvas : MonoBehaviour
     [HideInInspector]public bool typing;
 
     private NPCScript currentScript;
-    private NPCBehaviour currentSheep;
+    private DialogueNPCBehaviour currentSheep;
 
     private AudioClip CharacterDialogueSound;
 
@@ -65,7 +65,7 @@ public class DialogueCanvas : MonoBehaviour
         Debug.LogWarning("no canvas dummy");
     }
 
-    public void LoadScript(NPCScript script, NPCBehaviour sheep)
+    public void LoadScript(NPCScript script, DialogueNPCBehaviour sheep)
     {
         if (script == null || sheep == null)
         {

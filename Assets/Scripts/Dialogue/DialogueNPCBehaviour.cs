@@ -15,7 +15,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class NPCBehaviour : MonoBehaviour
+public class DialogueNPCBehaviour : MonoBehaviour
 {
     [Header("Dialogue")]
     public NPCScript DefaultScript;
