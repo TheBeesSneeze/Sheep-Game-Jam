@@ -857,7 +857,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1588894710}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: LoadGame
+        m_MethodName: LoadWakeUpScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

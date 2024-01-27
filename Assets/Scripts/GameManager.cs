@@ -32,4 +32,9 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void LoadWakeUpScene()
+    {
+        SceneManager.LoadScene("WakeUp");
+    }
 }
