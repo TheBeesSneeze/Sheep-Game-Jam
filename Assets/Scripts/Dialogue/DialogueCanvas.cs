@@ -85,7 +85,10 @@ public class DialogueCanvas : MonoBehaviour
 
         characterName.text = script.CharacterName;
 
-        CharacterDialogueSound = script.CharacterDialogueSound;
+        if(script.CharacterDialogueSound != null)
+            CharacterDialogueSound = script.CharacterDialogueSound;
+
+        ActivateSpeech();
     }
 
     public virtual void ActivateSpeech()
