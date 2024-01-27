@@ -60,8 +60,16 @@ public class DialogueNPCBehaviour : MonoBehaviour
 
     public void ActivateSpeech(InputAction.CallbackContext obj)
     {
-        //PUT SHEER IF CONDITION STUFF STUFF HERE
-        DialogueCanvas.Instance.LoadScript(DefaultScript, this);
+        ShearBehaviour shear = GetComponent<ShearBehaviour>();
+
+        if (shear != null && shear.HasBeenSheered)
+        {
+            DialogueCanvas.Instance.LoadScript(SheeredScript, this);
+        }
+        else
+        {
+            DialogueCanvas.Instance.LoadScript(DefaultScript, this);
+        }
 
         PlayerController.Instance.IgnoreAllInputs = true;
         InputManager.Instance.Talk.started -= ActivateSpeech;
