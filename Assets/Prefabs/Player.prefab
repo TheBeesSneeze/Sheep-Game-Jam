@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1929941874866365225}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,6 +47,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbf83635478fe074782bbb73dc67c75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sheer:
+    m_Name: Sheer
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 9a6d2b47-9e4d-45a7-b408-89012da87811
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   playerSpeed: 2
   jumpHeight: 1
   gravityValue: -9.81
