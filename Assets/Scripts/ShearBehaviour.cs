@@ -7,11 +7,15 @@ using UnityEngine.InputSystem;
 
 public class ShearBehaviour : MonoBehaviour
 {
-    public AudioSource SheepAudio;
-    public AudioClip NoShearSound;
-    public AudioClip ShearSound;
-    public int ShearAmount;
-    public List<Collider> Wool = new List<Collider>();
+    [Header("Audio")]
+    [SerializeField] private AudioSource sheepAudio;
+    [SerializeField] private AudioClip noShearSound;
+    [SerializeField] private AudioClip shearSound;
+
+    [Header("Unity")]
+    [SerializeField] private List<Collider> wool = new List<Collider>();
+
+    [HideInInspector] public bool HasBeenSheered=false;
 
     protected virtual void OnTriggerEnter(Collider collision)
     {
@@ -19,7 +23,7 @@ public class ShearBehaviour : MonoBehaviour
 
         if (tag.Equals("Player"))
         {
-            //PlayerController.Instance.Sheer.started += ShearSheep;
+            PlayerController.Instance.Shear.started += ShearSheep;
         }
 
     }
@@ -30,30 +34,26 @@ public class ShearBehaviour : MonoBehaviour
 
         if (tag.Equals("Player"))
         {
-            //PlayerController.Instance.Sheer.started -= ShearSheep;
+            PlayerController.Instance.Shear.started -= ShearSheep;
         }
     }
 
     public void ShearSheep(InputAction.CallbackContext obj)
     {
-        foreach (Collider ball in Wool)
+        foreach (Collider ball in wool)
         {
             //turn all colliders on
         }
         //uhhhhh find a better place for this
-            AudioSource.PlayClipAtPoint(ShearSound, transform.position, 100);
+            AudioSource.PlayClipAtPoint(shearSound, transform.position, 100);
          
        // if (/*already sheared*/)
         {
-            AudioSource.PlayClipAtPoint(NoShearSound, transform.position, 100);
+            AudioSource.PlayClipAtPoint(noShearSound, transform.position, 100);
             Debug.Log("sorry, no more wool");
             return;
         }
-
-        ShearAmount = ShearAmount - 1;
-        if (ShearAmount < 1)
-        {
-            //end the game or somethin
-        }
     }
+
+
 }
