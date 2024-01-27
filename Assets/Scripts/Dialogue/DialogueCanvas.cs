@@ -60,8 +60,14 @@ public class DialogueCanvas : MonoBehaviour
         if(ControlPromptCanvas!= null)
         {
             ControlPromptCanvas.SetActive(false);
+        }
+        
+        if(dialogueCanvas != null)
+        {
+            dialogueCanvas.SetActive(false);
             return;
         }
+
         Debug.LogWarning("no canvas dummy");
     }
 
