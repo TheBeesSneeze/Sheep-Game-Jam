@@ -33,7 +33,7 @@ public class DialogueNPCBehaviour : MonoBehaviour
             if (DialogueCanvas.Instance.ControlPromptCanvas != null)
                 DialogueCanvas.Instance.ControlPromptCanvas.SetActive(true);
 
-            PlayerController.Instance.Select.started += ActivateSpeech;
+            InputManager.Instance.Talk.started += ActivateSpeech;
         }
     }
 
@@ -50,7 +50,7 @@ public class DialogueNPCBehaviour : MonoBehaviour
             if (DialogueCanvas.Instance.ControlPromptCanvas != null)
                 DialogueCanvas.Instance.ControlPromptCanvas.SetActive(false);
 
-            PlayerController.Instance.Select.started -= ActivateSpeech;
+            InputManager.Instance.Talk.started -= ActivateSpeech;
         }
     }
 
@@ -60,9 +60,9 @@ public class DialogueNPCBehaviour : MonoBehaviour
         DialogueCanvas.Instance.LoadScript(DefaultScript, this);
 
         PlayerController.Instance.IgnoreAllInputs = true;
-        PlayerController.Instance.Select.started -= ActivateSpeech;
-        PlayerController.Instance.ExitText.started += Exit_text;
-        PlayerController.Instance.SkipText.started += Skip_text;
+        InputManager.Instance.Talk.started -= ActivateSpeech;
+        InputManager.Instance.Pause.started += Exit_text;
+        InputManager.Instance.SkipText.started += Skip_text;
     }
 
     public virtual void Exit_text(InputAction.CallbackContext obj)
@@ -75,8 +75,8 @@ public class DialogueNPCBehaviour : MonoBehaviour
         DialogueCanvas.Instance.CancelSpeech();
 
         PlayerController.Instance.IgnoreAllInputs = false;
-        PlayerController.Instance.ExitText.started -= Exit_text;
-        PlayerController.Instance.SkipText.started -= Skip_text;
+        InputManager.Instance.Pause.started -= Exit_text;
+        InputManager.Instance.SkipText.started -= Skip_text;
     }
 
     public void Skip_text(InputAction.CallbackContext obj)

@@ -23,7 +23,7 @@ public class ShearBehaviour : MonoBehaviour
 
         if (tag.Equals("Player"))
         {
-            PlayerController.Instance.Shear.started += ShearSheep;
+            InputManager.Instance.Shear.started += ShearSheep;
         }
 
     }
@@ -34,7 +34,7 @@ public class ShearBehaviour : MonoBehaviour
 
         if (tag.Equals("Player"))
         {
-            PlayerController.Instance.Shear.started -= ShearSheep;
+            InputManager.Instance.Shear.started -= ShearSheep;
         }
     }
 
@@ -42,8 +42,9 @@ public class ShearBehaviour : MonoBehaviour
     {
         if(HasBeenSheered)
         {
-
+            return;
         }
+        HasBeenSheered = true;
 
 
         foreach (Collider ball in wool)

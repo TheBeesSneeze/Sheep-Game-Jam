@@ -17,15 +17,13 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
-    private InputManager inputManager;
     private Transform cameraTransform;
 
-    public InputAction Select;
-    public InputAction SkipText;
-    public InputAction ExitText;
-    public InputAction Shear;
     public bool Pause;
     public bool IgnoreAllInputs;
+
+    private float xMovement;
+    private float yMovement;
 
     private void Awake()
     {
@@ -43,50 +41,63 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         controller = GetComponent<CharacterController>();
-        inputManager = InputManager.Instance;
         cameraTransform = Camera.main.transform;
+
+        InputManager.Instance.Pause.started += Pause_started;
     }
 
     void Update()
     {
-        if (inputManager.Paused())
+        if (IgnoreAllInputs)
         {
-            Debug.Log("Paused");
-            //Pause Stuff
-            if(Pause)
-            {
-                Pause = false;
-                IgnoreAllInputs = false;
-            }
-            else
-            {
-                Pause = true;
-                IgnoreAllInputs = true;
-            }
+            return;
         }
-        if (!IgnoreAllInputs)
+
+        /*
+        groundedPlayer = controller.isGrounded;
+        if (groundedPlayer && playerVelocity.y < 0)
         {
-            groundedPlayer = controller.isGrounded;
-            if (groundedPlayer && playerVelocity.y < 0)
-            {
-                playerVelocity.y = 0f;
-            }
+            playerVelocity.y = 0f;
+        }
+        */
 
-            Vector3 movement = inputManager.GetPlayerMovement();
-            Vector3 move = new Vector3(movement.x, 0f, movement.y);
-            move = cameraTransform.forward * move.z + cameraTransform.right * move.x;
-            move.y = 0f;
-            controller.Move(move * Time.deltaTime * playerSpeed);
+        yMovement += InputManager.Instance.GetMouseLook().y * 10 * Time.deltaTime;
+        xMovement += InputManager.Instance.GetMouseLook().x * 10 * Time.deltaTime;
+        yMovement = Mathf.Clamp(yMovement, -90, 90);
+        Camera.main.transform.localEulerAngles = new Vector3(-yMovement, 0f, 0f);
+        transform.eulerAngles = new Vector3(0f, xMovement, 0f);
 
+        Vector3 movement = InputManager.Instance.GetPlayerMovement();
+        Vector3 move = new Vector3(movement.x, 0f, movement.y);
+        //move = cameraTransform.forward * move.z + cameraTransform.right * move.x;
+        //move.y = 0f;
+        controller.Move(move * Time.deltaTime * playerSpeed);
 
-            // Changes the height position of the player..
-            //if (inputManager.PlayerJumpedThisFrame() && groundedPlayer)
-            //{
-            //    playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-            //}
+        Debug.Log(move);
 
-            playerVelocity.y += gravityValue * Time.deltaTime;
-            controller.Move(playerVelocity * Time.deltaTime);
+        // Changes the height position of the player..
+        //if (inputManager.JumpStarted() && groundedPlayer)
+        //{
+        //    playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+        //}
+
+        playerVelocity.y += gravityValue * Time.deltaTime;
+        controller.Move(playerVelocity * Time.deltaTime);
+    }
+
+    public void Pause_started(InputAction.CallbackContext obj)
+    {
+        Debug.Log("Paused");
+        //Pause Stuff
+        if (Pause)
+        {
+            Pause = false;
+            IgnoreAllInputs = false;
+        }
+        else
+        {
+            Pause = true;
+            IgnoreAllInputs = true;
         }
     }
 }

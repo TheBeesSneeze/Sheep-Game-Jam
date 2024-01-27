@@ -30,7 +30,7 @@ public class CinemachinePOVExtension : CinemachineExtension
                 {
                     startingRotation = transform.localRotation.eulerAngles;
                 }
-                Vector2 deltaInput = inputManager.GetMouseDelta();
+                Vector2 deltaInput = inputManager.GetMouseLook();
                 startingRotation.x += deltaInput.x * verticalSpeed * Time.deltaTime;
                 startingRotation.y += deltaInput.y * horizontalSpeed * Time.deltaTime;
                 startingRotation.y = Mathf.Clamp(startingRotation.y, -clampAngle, clampAngle);

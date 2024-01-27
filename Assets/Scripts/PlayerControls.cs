@@ -71,6 +71,24 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Shear"",
+                    ""type"": ""Button"",
+                    ""id"": ""fbcb7972-880d-40f9-bb8e-87c252dc31fe"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""SkipText"",
+                    ""type"": ""Button"",
+                    ""id"": ""e4ef2977-f750-4113-a938-ee8372c0aeb2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -172,6 +190,28 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Talk"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6a57a8e2-66d6-437b-a112-0b6802bf8216"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shear"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f7c7af8b-1338-476d-a0b8-73f9dc2858b7"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SkipText"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -185,6 +225,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
         m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
         m_Player_Talk = m_Player.FindAction("Talk", throwIfNotFound: true);
+        m_Player_Shear = m_Player.FindAction("Shear", throwIfNotFound: true);
+        m_Player_SkipText = m_Player.FindAction("SkipText", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -251,6 +293,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Look;
     private readonly InputAction m_Player_Pause;
     private readonly InputAction m_Player_Talk;
+    private readonly InputAction m_Player_Shear;
+    private readonly InputAction m_Player_SkipText;
     public struct PlayerActions
     {
         private @PlayerControls m_Wrapper;
@@ -260,6 +304,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         public InputAction @Look => m_Wrapper.m_Player_Look;
         public InputAction @Pause => m_Wrapper.m_Player_Pause;
         public InputAction @Talk => m_Wrapper.m_Player_Talk;
+        public InputAction @Shear => m_Wrapper.m_Player_Shear;
+        public InputAction @SkipText => m_Wrapper.m_Player_SkipText;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -284,6 +330,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Talk.started += instance.OnTalk;
             @Talk.performed += instance.OnTalk;
             @Talk.canceled += instance.OnTalk;
+            @Shear.started += instance.OnShear;
+            @Shear.performed += instance.OnShear;
+            @Shear.canceled += instance.OnShear;
+            @SkipText.started += instance.OnSkipText;
+            @SkipText.performed += instance.OnSkipText;
+            @SkipText.canceled += instance.OnSkipText;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -303,6 +355,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Talk.started -= instance.OnTalk;
             @Talk.performed -= instance.OnTalk;
             @Talk.canceled -= instance.OnTalk;
+            @Shear.started -= instance.OnShear;
+            @Shear.performed -= instance.OnShear;
+            @Shear.canceled -= instance.OnShear;
+            @SkipText.started -= instance.OnSkipText;
+            @SkipText.performed -= instance.OnSkipText;
+            @SkipText.canceled -= instance.OnSkipText;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -327,5 +385,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         void OnLook(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
         void OnTalk(InputAction.CallbackContext context);
+        void OnShear(InputAction.CallbackContext context);
+        void OnSkipText(InputAction.CallbackContext context);
     }
 }
