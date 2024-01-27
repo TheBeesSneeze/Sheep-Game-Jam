@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     private float jumpHeight = 1.0f;
     [SerializeField]
     private float gravityValue = -9.81f;
+    [SerializeField]
+    private float sensitivity = 20;
 
     private CharacterController controller;
     private Vector3 playerVelocity;
@@ -61,8 +63,8 @@ public class PlayerController : MonoBehaviour
         }
         */
 
-        yMovement += InputManager.Instance.GetMouseLook().y * 10 * Time.deltaTime;
-        xMovement += InputManager.Instance.GetMouseLook().x * 10 * Time.deltaTime;
+        yMovement += InputManager.Instance.GetMouseLook().y * sensitivity * Time.deltaTime;
+        xMovement += InputManager.Instance.GetMouseLook().x * sensitivity * Time.deltaTime;
         yMovement = Mathf.Clamp(yMovement, -90, 90);
         Camera.main.transform.localEulerAngles = new Vector3(-yMovement, 0f, 0f);
         transform.eulerAngles = new Vector3(0f, xMovement, 0f);
