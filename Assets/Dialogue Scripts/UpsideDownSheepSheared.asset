@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 185e4af1f375a2f4b87c62e35aac7b74, type: 3}
-  m_Name: Test_Unsheered
+  m_Name: UpsideDownSheepSheared
   m_EditorClassIdentifier: 
   TextList:
-  - hi hi hi hi hi hi hi hi
-  - omg hi
-  CharacterName: Test Sheep
-  CharacterDialogueSound: {fileID: 8300000, guid: bcf36067aeaceba4e9311685c36d0c7b, type: 3}
+  - Watch that wool go.
+  - Kind of like how Mama Sheep's son left the farm not too long ago.
+  - I wonder where he is now.
+  CharacterName: Upside Down Sheep
+  CharacterDialogueSound: {fileID: 8300000, guid: 4602d7c178542454289b72d7184d53f9, type: 3}

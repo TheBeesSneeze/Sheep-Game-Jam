@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 185e4af1f375a2f4b87c62e35aac7b74, type: 3}
-  m_Name: Test_Unsheered
+  m_Name: SkaterSheepSheared
   m_EditorClassIdentifier: 
   TextList:
-  - hi hi hi hi hi hi hi hi
-  - omg hi
-  CharacterName: Test Sheep
-  CharacterDialogueSound: {fileID: 8300000, guid: bcf36067aeaceba4e9311685c36d0c7b, type: 3}
+  - "YO YO YO WHATS UP DIGGITY DOG B)\r"
+  - "WHATS THE RIZZLE ?? \r"
+  - "\rYOU WANT TO JOIN ME AND COOL SHEEPS SKATE CLUB ?\r\nNO WAY POSER !!! "
+  CharacterName: Sk8ter Sheep
+  CharacterDialogueSound: {fileID: 0}

@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 185e4af1f375a2f4b87c62e35aac7b74, type: 3}
-  m_Name: Test_Unsheered
+  m_Name: CoolSheepUnsheared
   m_EditorClassIdentifier: 
   TextList:
-  - hi hi hi hi hi hi hi hi
-  - omg hi
-  CharacterName: Test Sheep
-  CharacterDialogueSound: {fileID: 8300000, guid: bcf36067aeaceba4e9311685c36d0c7b, type: 3}
+  - What's up my dudes!
+  - You said you're trying to find a fake sheep?
+  - ' I know cool, and Normal Sheep isn''t that! Whatever he says, believe the opposite!'
+  CharacterName: Cool Sheep
+  CharacterDialogueSound: {fileID: 8300000, guid: 4602d7c178542454289b72d7184d53f9, type: 3}

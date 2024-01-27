@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 185e4af1f375a2f4b87c62e35aac7b74, type: 3}
-  m_Name: Test_Unsheered
+  m_Name: AngelSheepSheared
   m_EditorClassIdentifier: 
   TextList:
-  - hi hi hi hi hi hi hi hi
-  - omg hi
-  CharacterName: Test Sheep
-  CharacterDialogueSound: {fileID: 8300000, guid: bcf36067aeaceba4e9311685c36d0c7b, type: 3}
+  - Try as you might, I cannot be the one you seek.
+  CharacterName: Angel Sheep
+  CharacterDialogueSound: {fileID: 8300000, guid: 24933b32f855c9048af22228e684a6a2, type: 3}
