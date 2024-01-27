@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController Instance;
+
     [SerializeField]
     private float playerSpeed = 2.0f;
     [SerializeField]
@@ -18,10 +20,10 @@ public class PlayerController : MonoBehaviour
     private InputManager inputManager;
     private Transform cameraTransform;
 
-    public static PlayerController Instance;
-
+    public InputAction Select;
     public InputAction SkipText;
     public InputAction ExitText;
+    public InputAction Shear;
     public bool Pause;
     public bool IgnoreAllInputs;
 
@@ -43,7 +45,6 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
         inputManager = InputManager.Instance;
         cameraTransform = Camera.main.transform;
-
     }
 
     void Update()
