@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 185e4af1f375a2f4b87c62e35aac7b74, type: 3}
   m_Name: Test_Unsheered
   m_EditorClassIdentifier: 
-  TextList: []
-  CharacterName: 
+  TextList:
+  - hi hi hi hi hi hi hi hi
+  - omg hi
+  CharacterName: Test Sheep
   CharacterDialogueSound: {fileID: 0}
