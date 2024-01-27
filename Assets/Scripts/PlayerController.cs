@@ -73,8 +73,6 @@ public class PlayerController : MonoBehaviour
         //move.y = 0f;
         controller.Move(move * Time.deltaTime * playerSpeed);
 
-        Debug.Log(move);
-
         // Changes the height position of the player..
         //if (inputManager.JumpStarted() && groundedPlayer)
         //{
