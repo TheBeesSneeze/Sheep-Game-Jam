@@ -22,11 +22,9 @@ public class DialogueCanvas : MonoBehaviour
     [SerializeField] public GameObject ControlPromptCanvas;
 
     [Header("Dialogue Canvas")]
-    [SerializeField] private GameObject buttonPrompt;
     [SerializeField] private TextMeshProUGUI textBox;
     [SerializeField] private TextMeshProUGUI characterName;
     [SerializeField] private GameObject dialogueCanvas;
-    [SerializeField] private GameObject dialogueArea;
     [SerializeField] private AudioSource dialogueSoundSource;
 
     [Header("Settings")]
@@ -89,8 +87,8 @@ public class DialogueCanvas : MonoBehaviour
         Debug.Log("Cancelling speech");
 
         textIndex = 0;
-        if (buttonPrompt != null)
-            buttonPrompt.SetActive(true);
+        if (ControlPromptCanvas != null)
+            ControlPromptCanvas.SetActive(true);
 
         if (dialogueCanvas != null)
             dialogueCanvas.SetActive(false);
@@ -107,8 +105,8 @@ public class DialogueCanvas : MonoBehaviour
             StartCoroutine(StartText());
         }
 
-        if (buttonPrompt != null)
-            buttonPrompt.SetActive(false);
+        if (ControlPromptCanvas != null)
+            ControlPromptCanvas.SetActive(false);
     }
 
     /// <summary>
