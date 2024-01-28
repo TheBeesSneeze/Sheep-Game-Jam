@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-//so unfinished sorry guys
-
 public class ShearBehaviour : MonoBehaviour
 {
     [Header("Audio")]
@@ -40,7 +38,7 @@ public class ShearBehaviour : MonoBehaviour
         }
     }
 
-    public void ShearSheep(InputAction.CallbackContext obj)
+    public virtual void ShearSheep(InputAction.CallbackContext obj)
     {
         if(HasBeenSheered)
         {
@@ -66,8 +64,11 @@ public class ShearBehaviour : MonoBehaviour
             myRB.velocity = speed;
 
             Debug.Log("shearing...");
-        }   
+        }
+
+        GameObject.FindObjectOfType<UIManager>().UpdateShearUI();
     }
+
 
 
 }
