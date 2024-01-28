@@ -44,4 +44,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("WakeUp");
         PlayerController.Instance.UnPause();
     }
+
+    public void LoadWakeUpScene2()
+    {
+        SceneManager.LoadScene("WakeUpScene2");
+    }
 }
