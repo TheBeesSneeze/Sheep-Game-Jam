@@ -14,11 +14,9 @@ public class WolfBehavior : ShearBehaviour
 
     public override void ShearSheep(InputAction.CallbackContext obj)
     {
-        base.ShearSheep(nputAction.CallbackContext obj);
-        if(HasBeenSheered)
-        {
-            babySheep.SetActive(false);
-            wolf.SetActive(true);
-        }
+        base.ShearSheep(obj);
+
+        babySheep.SetActive(false);
+        wolf.SetActive(true);
     }
 }
