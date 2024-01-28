@@ -56,6 +56,8 @@ public class DialogueNPCBehaviour : MonoBehaviour
 
     public virtual void ActivateSpeech(InputAction.CallbackContext obj)
     {
+        TurnPlayerTowardsSheep();
+
         ShearBehaviour shear = GetComponent<ShearBehaviour>();
 
         if (shear != null && shear.HasBeenSheered)
@@ -85,5 +87,15 @@ public class DialogueNPCBehaviour : MonoBehaviour
         PlayerController.Instance.IgnoreAllInputs = false;
         InputManager.Instance.Pause.started -= Exit_text;
         //InputManager.Instance.SkipText.started -= DialogueCanvas.Instance.Skip_text;
+    }
+
+    void TurnPlayerTowardsSheep()
+    {
+        PlayerController.Instance.transform.LookAt(transform);
+
+        Vector3 rotate = PlayerController.Instance.transform.rotation.eulerAngles;
+        rotate = new Vector3(0, rotate.y , 0);
+
+        PlayerController.Instance.transform.eulerAngles = rotate;//Quaternion.Euler(startingRoation.x, transform.rotation.y, startingRoation.z);
     }
 }
