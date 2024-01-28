@@ -164,7 +164,7 @@ public class DialogueCanvas : MonoBehaviour
             {
                 Debug.Log("Skipping Text");
                 SkipText = false;
-                textBox.text = TextList[textIndex];
+                textBox.text = text;
                 break;
             }
            
