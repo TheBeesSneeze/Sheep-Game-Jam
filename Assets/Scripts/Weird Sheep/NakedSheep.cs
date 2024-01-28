@@ -11,6 +11,8 @@ public class NakedSheep : ShearBehaviour
     {
         Debug.Log("shearing naked");
 
+        if (GetComponent<DialogueNPCBehaviour>().talking) return;
+
         if (HasBeenSheered)
         {
             AudioSource.PlayClipAtPoint(noShearSound, transform.position, 100);
@@ -28,9 +30,6 @@ public class NakedSheep : ShearBehaviour
             ui.UpdateShearUI();
         }
 
-        //Material material = transform.parent.GetComponent<Material>();
-        //shader.Albedo
-        //mesh.material.color = Color.red;
-        mesh.materials[0] = skin;
+        transform.parent.GetComponent<Animator>().SetBool("Lose Skin",true);
     }
 }
