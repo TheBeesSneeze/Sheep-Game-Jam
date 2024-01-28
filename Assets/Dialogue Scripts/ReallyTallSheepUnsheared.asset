@@ -13,10 +13,7 @@ MonoBehaviour:
   m_Name: ReallyTallSheepUnsheared
   m_EditorClassIdentifier: 
   TextList:
-  - "I can see all from up here.\r"
-  - "\rCamoflauge Sheep. The writing is on the walls.\r\nHis walls.\r\nListen to
-    the first letter of his words."
-  - "\r\rHis walls.\r."
-  - "\rListen to the first letter of his words."
+  - "I am mad!\r"
+  - Look yonder, in nearby grass!
   CharacterName: Really Tall Sheep
   CharacterDialogueSound: {fileID: 0}

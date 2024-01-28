@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BabySheepSheared
   m_EditorClassIdentifier: 
   TextList:
-  - Well then
+  - Rats.
   CharacterName: Baby Sheep (?)
   CharacterDialogueSound: {fileID: 8300000, guid: 24933b32f855c9048af22228e684a6a2, type: 3}

@@ -15,6 +15,7 @@ MonoBehaviour:
   TextList:
   - Hey, I'm Rainbow Sheep. Go pride!!
   - It's really sad what happened to Unfinished Sheep.
+  - Or I guess, what didn't happen.
   - He always loved talking about sheep that weren't wolves.
   CharacterName: Rainbow Sheep
   CharacterDialogueSound: {fileID: 8300000, guid: 4602d7c178542454289b72d7184d53f9, type: 3}

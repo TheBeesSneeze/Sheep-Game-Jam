@@ -13,20 +13,9 @@ MonoBehaviour:
   m_Name: NakedSheepUnsheared
   m_EditorClassIdentifier: 
   TextList:
-  - '"I am naked sheep. Abraham lincolns vice president sheep.'
-  - 'He kinda makes me do all his busy work, it kinda sucks.
-
-    Bahlter White and
-    Skater Sheep are some well known troublemakers.
-
-    But I will vouch for them.
-    They''ve been here longer than me.
-
-    They are not wolves!"'
-  - ??? Sheep  and ??? Sheep are some well known troublemakers.
-  - 'But I will vouch for them. They''ve been here longer than me.
-
-    They are
-    not wolves!'
+  - I am naked sheep. Abraham Lincoln's vice president sheep.
+  - He kinda makes me do all his busy work, it kinda sucks.
+  - Really Tall Sheep is the lambmark of this farm. He's so tall, just like Lincoln!
+  - They are not a wolf!
   CharacterName: Naked Sheep
   CharacterDialogueSound: {fileID: 8300000, guid: 4602d7c178542454289b72d7184d53f9, type: 3}

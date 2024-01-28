@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: AngelSheepUnsheared
   m_EditorClassIdentifier: 
   TextList:
-  - ????
+  - Hello, my child. I am a religiously ambiguous angel.
+  - I know your quest. I am here at your aid.
+  - The wolf dons a costume white of wool.
+  - I promise you, my child, that my words are the truth.
   CharacterName: Angel Sheep
   CharacterDialogueSound: {fileID: 8300000, guid: 24933b32f855c9048af22228e684a6a2, type: 3}

@@ -15,7 +15,7 @@ MonoBehaviour:
   TextList:
   - Hello there.
   - Yes, I know I'm upside down. I like it better that way.
-  - Hello there. Yes, I know I'm upside down. I like it better that way. What I don't
-    like is the fact that Mama Sheep's son is all grown up!
+  - What I don't like is the fact that Mama Sheep's son is all grown up!
+  - I miss him.
   CharacterName: Upside Down Sheep
   CharacterDialogueSound: {fileID: 8300000, guid: 4602d7c178542454289b72d7184d53f9, type: 3}

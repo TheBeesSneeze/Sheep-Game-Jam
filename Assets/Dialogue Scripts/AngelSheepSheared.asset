@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextList:
   - Try as you might, I cannot be the one you seek.
+  - Search for a sheep of white wool. The wolf hides within them.
   CharacterName: Angel Sheep
   CharacterDialogueSound: {fileID: 8300000, guid: 24933b32f855c9048af22228e684a6a2, type: 3}

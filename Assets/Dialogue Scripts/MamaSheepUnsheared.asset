@@ -15,5 +15,7 @@ MonoBehaviour:
   TextList:
   - What is going on? I hope my baby is alright!
   - I've been taking care of him for so long, but I still get scared when we're apart.
+  - Me and Camoflauge sheep are so proud. I wish he wasn't so busy
+  - at war.
   CharacterName: Mama Sheep
   CharacterDialogueSound: {fileID: 8300000, guid: 4602d7c178542454289b72d7184d53f9, type: 3}
