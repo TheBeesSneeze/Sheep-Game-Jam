@@ -46,4 +46,9 @@ public class GameManager : MonoBehaviour
         if (PlayerController.Instance != null)
             PlayerController.Instance.UnPause();
     }
+
+    public void LoadWakeUpScene2()
+    {
+        SceneManager.LoadScene("WakeUpScene2");
+    }
 }
