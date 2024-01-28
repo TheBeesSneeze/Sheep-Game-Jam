@@ -26,4 +26,4 @@ MonoBehaviour:
     there i am equally unwanted.'
   - goodbye forever.
   CharacterName: the wolf
-  CharacterDialogueSound: {fileID: 8300000, guid: 4602d7c178542454289b72d7184d53f9, type: 3}
+  CharacterDialogueSound: {fileID: 8300000, guid: b522f904fa71866409a1b997685e44f4, type: 3}
