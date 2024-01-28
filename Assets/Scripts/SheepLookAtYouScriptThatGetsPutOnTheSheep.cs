@@ -15,7 +15,7 @@ public class SheepLookAtYouScriptThatGetsPutOnTheSheep : MonoBehaviour
     public float RotationModifier = 90;
 
     private Vector3 startingRoation;
-    private bool turn;
+    public bool turn;
 
     private void Start()
     {
