@@ -16,6 +16,8 @@ public class WolfBehavior : ShearBehaviour
     {
         base.ShearSheep(obj);
 
+        if (GetComponent<DialogueNPCBehaviour>().talking) return;
+
         transform.parent.GetComponent<MeshRenderer>().enabled = false;
         wolf.SetActive(true);
     }
