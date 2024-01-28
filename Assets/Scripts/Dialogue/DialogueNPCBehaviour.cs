@@ -85,7 +85,7 @@ public class DialogueNPCBehaviour : MonoBehaviour
         LeaveText();
     }
 
-    public void LeaveText()
+    public virtual void LeaveText()
     {
         DialogueCanvas.Instance.CancelSpeech();
         SetAnimator(false);
@@ -115,5 +115,10 @@ public class DialogueNPCBehaviour : MonoBehaviour
         
         if(animator != null)
             animator.SetBool("Talking", talkingAnimation);
+    }
+
+    public virtual void OnDialogueEnd()
+    {
+
     }
 }

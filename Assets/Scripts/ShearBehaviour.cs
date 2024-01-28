@@ -67,8 +67,6 @@ public class ShearBehaviour : MonoBehaviour
             //speed = speed;
 
             myRB.velocity = speed;
-
-            Debug.Log("shearing...");
         }
 
         UIManager ui = GameObject.FindObjectOfType<UIManager>();
