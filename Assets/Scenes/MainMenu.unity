@@ -719,7 +719,7 @@ MonoBehaviour:
 
     STARBORN FONT BY DARRELL FLOOD
 
-    -----------------------------------------------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------------------------------------------------------
 
     SOUND:
 
@@ -742,7 +742,10 @@ MonoBehaviour:
 
     WOLF HOWLING BY UNIVERSFIELD
 
-    -----------------------------------------------------------------------------------------------------------------------
+    TADAA
+    SOUND BY PIXABAY
+
+    --------------------------------------------------------------------------------------------------------------------------------
 
     ART:
 
@@ -764,14 +767,16 @@ MonoBehaviour:
     WOLF
     END SCREENS BY WOLFROAD ON DEVIANTART
 
-    -----------------------------------------------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------------------------------------------------------
 
     SPECIAL
     THANKS:
 
     JAY EMBRY FOR CODING ASSISTANCE
 
-    GABE RODRIGUEZ'
+    GABE RODRIGUEZ
+
+    LUCY ROBBINS'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 143815bd107bd76438214801ec8c1eae, type: 2}
   m_sharedMaterial: {fileID: -4259932484926644012, guid: 143815bd107bd76438214801ec8c1eae, type: 2}
@@ -798,8 +803,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.91
-  m_fontSizeBase: 28.91
+  m_fontSize: 26.6
+  m_fontSizeBase: 26.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
