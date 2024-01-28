@@ -9525,6 +9525,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7910508978767352745, guid: c66a3535a49128c49aaa146fc061ebf3, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1611012864}
     - target: {fileID: 9134121173753133445, guid: c66a3535a49128c49aaa146fc061ebf3, type: 3}
       propertyPath: m_Radius
       value: 1
@@ -12125,6 +12129,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601519950}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1611012864 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8357558686714839261, guid: c66a3535a49128c49aaa146fc061ebf3, type: 3}
+  m_PrefabInstance: {fileID: 1179392024}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1625413230
 GameObject:
   m_ObjectHideFlags: 0
