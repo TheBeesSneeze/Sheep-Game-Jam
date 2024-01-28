@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WinScreen.unity
     guid: 25c1ea73bd2a87b408ea835a8e04f0aa
+  - enabled: 1
+    path: Assets/Scenes/WakeUp2.unity
+    guid: 1220a559d7eeaac47b56f6c5d3c1dcee
   m_configObjects: {}
