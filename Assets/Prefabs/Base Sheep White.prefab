@@ -323,6 +323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultScript: {fileID: 11400000, guid: 8b481d54aca86eb418fea62f587f5c40, type: 2}
   SheeredScript: {fileID: 11400000, guid: 8b481d54aca86eb418fea62f587f5c40, type: 2}
+  animator: {fileID: 0}
 --- !u!114 &4658321341539875070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,8 +337,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sheepAudio: {fileID: 0}
-  noShearSound: {fileID: 0}
-  shearSound: {fileID: 0}
+  noShearSound: {fileID: 8300000, guid: bcf36067aeaceba4e9311685c36d0c7b, type: 3}
+  shearSound: {fileID: 8300000, guid: 89d3ff38cd28a004bbf2d2e237f0d8d7, type: 3}
   wool:
   - {fileID: 8122298330525582420}
   - {fileID: 7929784155328491911}
@@ -1653,7 +1654,7 @@ Transform:
   - {fileID: 6304471352903767435}
   - {fileID: 2836351571829812924}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6851445531390616118
 MonoBehaviour:
@@ -1668,6 +1669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationModifier: 90
+  turn: 0
 --- !u!33 &7556949467388634551
 MeshFilter:
   m_ObjectHideFlags: 0
