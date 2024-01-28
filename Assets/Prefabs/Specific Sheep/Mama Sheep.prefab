@@ -13,6 +13,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 944335161410584326, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 944335161410584326, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 944335161410584326, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 944335161410584326, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -54,8 +66,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6661899112370894743, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_Name
-      value: Base Sheep White
+      value: Mama Sheep
       objectReference: {fileID: 0}
+    - target: {fileID: 8697455760768867349, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6a32b8ade3a425949ac90f296d6f0e2f, type: 2}
+    - target: {fileID: 8866014889285480797, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 806219238e85dd142bde11ba4b1853e1, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
