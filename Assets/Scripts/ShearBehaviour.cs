@@ -71,13 +71,16 @@ public class ShearBehaviour : MonoBehaviour
             myRB.velocity = speed;
         }
 
+        UpdateShearUI();
+    }
+
+    protected virtual void UpdateShearUI()
+    {
         UIManager ui = GameObject.FindObjectOfType<UIManager>();
         if (ui != null)
         {
             ui.UpdateShearUI();
         }
     }
-
-
 
 }
