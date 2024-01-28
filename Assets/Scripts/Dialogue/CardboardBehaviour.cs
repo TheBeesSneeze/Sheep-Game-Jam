@@ -10,5 +10,7 @@ public class CardboardBehaviour : DialogueNPCBehaviour
         Animator cardboard = transform.parent.GetComponent<Animator>();
 
         cardboard.SetTrigger("Fall Over");
+
+
     }
 }

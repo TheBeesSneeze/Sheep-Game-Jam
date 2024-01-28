@@ -30,8 +30,6 @@ public class DialogueNPCBehaviour : MonoBehaviour
         string tag = collision.gameObject.tag;
         if (tag.Equals("Player"))
         {
-            Debug.Log("baaa");
-
             if (DialogueCanvas.Instance.ControlPromptCanvas != null)
                 DialogueCanvas.Instance.ControlPromptCanvas.SetActive(true);
 
@@ -49,8 +47,6 @@ public class DialogueNPCBehaviour : MonoBehaviour
 
         if (tag.Equals("Player"))
         {
-            Debug.Log("baaa :(");
-
             if (DialogueCanvas.Instance.ControlPromptCanvas != null)
                 DialogueCanvas.Instance.ControlPromptCanvas.SetActive(false);
 
@@ -84,7 +80,6 @@ public class DialogueNPCBehaviour : MonoBehaviour
 
     public void LeaveText()
     {
-        Debug.Log("leaving text");
         DialogueCanvas.Instance.CancelSpeech();
 
         PlayerController.Instance.IgnoreAllInputs = false;
