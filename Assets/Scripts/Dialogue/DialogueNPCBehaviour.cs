@@ -101,7 +101,7 @@ public class DialogueNPCBehaviour : MonoBehaviour
         PlayerController.Instance.transform.LookAt(transform);
 
         Vector3 rotate = PlayerController.Instance.transform.rotation.eulerAngles;
-        rotate = new Vector3(0, rotate.y , 0);
+        rotate = new Vector3(rotate.x, rotate.y , rotate.z);
 
         PlayerController.Instance.transform.eulerAngles = rotate;//Quaternion.Euler(startingRoation.x, transform.rotation.y, startingRoation.z);
     }
