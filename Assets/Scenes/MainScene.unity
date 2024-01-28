@@ -2522,8 +2522,12 @@ PrefabInstance:
       value: Mama Sheep
       objectReference: {fileID: 0}
     - target: {fileID: 5711665397262866722, guid: b8b6cc4c5fc5d854196fbec1386abc4f, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711665397262866722, guid: b8b6cc4c5fc5d854196fbec1386abc4f, type: 3}
       propertyPath: m_Center.y
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7875968998741437455, guid: b8b6cc4c5fc5d854196fbec1386abc4f, type: 3}
       propertyPath: m_Radius
@@ -5937,6 +5941,14 @@ PrefabInstance:
     - target: {fileID: 3537039326037620222, guid: 395bf9bc70861f84a93806c67add78d5, type: 3}
       propertyPath: m_Name
       value: Camo Sheep
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244157127082168841, guid: 395bf9bc70861f84a93806c67add78d5, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244157127082168841, guid: 395bf9bc70861f84a93806c67add78d5, type: 3}
+      propertyPath: m_Center.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6953334245164957039, guid: 395bf9bc70861f84a93806c67add78d5, type: 3}
       propertyPath: m_RootOrder
@@ -9506,6 +9518,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Abraham
       objectReference: {fileID: 0}
+    - target: {fileID: 6686741165467454632, guid: c66a3535a49128c49aaa146fc061ebf3, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6686741165467454632, guid: c66a3535a49128c49aaa146fc061ebf3, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9134121173753133445, guid: c66a3535a49128c49aaa146fc061ebf3, type: 3}
       propertyPath: m_Radius
       value: 1
@@ -10738,6 +10758,14 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 8437114979758406791, guid: cf58e974d7dbe334ab65e6c79be8963a, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8437114979758406791, guid: cf58e974d7dbe334ab65e6c79be8963a, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9144268437600836464, guid: cf58e974d7dbe334ab65e6c79be8963a, type: 3}
       propertyPath: m_Name
       value: SkaterSheep (1)
@@ -11353,6 +11381,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: NormalSheep (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8749103024472290067, guid: c913162493a2b1349bae19087b23db54, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749103024472290067, guid: c913162493a2b1349bae19087b23db54, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11859,6 +11895,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5815259938439771284, guid: f3e278bdd60b56f4cb08895549c36185, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5815259938439771284, guid: f3e278bdd60b56f4cb08895549c36185, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6576281262609191779, guid: f3e278bdd60b56f4cb08895549c36185, type: 3}
       propertyPath: m_Name
       value: CoolSheep (1)
@@ -12195,6 +12239,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1718475161352604164, guid: f376c3bf1e441af4b91e948d5629b8b4, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1718475161352604164, guid: f376c3bf1e441af4b91e948d5629b8b4, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2029171664190893555, guid: f376c3bf1e441af4b91e948d5629b8b4, type: 3}
       propertyPath: m_Name
       value: Wahlta
@@ -15082,7 +15134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1574742160116233796, guid: 038e828beb399b440abac93ed776b477, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.8
+      value: 5.21
       objectReference: {fileID: 0}
     - target: {fileID: 1574742160116233796, guid: 038e828beb399b440abac93ed776b477, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15119,6 +15171,14 @@ PrefabInstance:
     - target: {fileID: 4950504407098572501, guid: 038e828beb399b440abac93ed776b477, type: 3}
       propertyPath: m_Name
       value: Naked Sheep
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711665397262866722, guid: 038e828beb399b440abac93ed776b477, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711665397262866722, guid: 038e828beb399b440abac93ed776b477, type: 3}
+      propertyPath: m_Center.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7875968998741437455, guid: 038e828beb399b440abac93ed776b477, type: 3}
       propertyPath: m_Radius
@@ -15467,6 +15527,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4321949183231502584, guid: 01cc19947a9873d47a5dbbeaa736e2df, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4321949183231502584, guid: 01cc19947a9873d47a5dbbeaa736e2df, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7071154917026332275, guid: 01cc19947a9873d47a5dbbeaa736e2df, type: 3}
       propertyPath: m_Radius
       value: 0.9
@@ -15488,6 +15556,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1329961892851013900, guid: c14dbc08834461542adfcc3f44215284, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329961892851013900, guid: c14dbc08834461542adfcc3f44215284, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1838781081786203899, guid: c14dbc08834461542adfcc3f44215284, type: 3}
       propertyPath: m_Name
       value: BabySheep
