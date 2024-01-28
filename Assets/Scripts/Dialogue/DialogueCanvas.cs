@@ -168,7 +168,7 @@ public class DialogueCanvas : MonoBehaviour
                 break;
             }
            
-            textBox.text = TextList[textIndex].Substring(0, i);
+            textBox.text = text.Substring(0, i);
 
             
 
