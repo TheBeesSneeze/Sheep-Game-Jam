@@ -48,7 +48,9 @@ public class ShearBehaviour : MonoBehaviour
         }
 
         HasBeenSheered = true;
-        AudioSource.PlayClipAtPoint(shearSound, transform.position, 100);
+
+        if(shearSound != null)
+            AudioSource.PlayClipAtPoint(shearSound, transform.position, 100);
 
         foreach (Rigidbody ball in wool)
         {
