@@ -2466,24 +2466,12 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1574742160116233796, guid: b8b6cc4c5fc5d854196fbec1386abc4f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 1574742160116233796, guid: b8b6cc4c5fc5d854196fbec1386abc4f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 1574742160116233796, guid: b8b6cc4c5fc5d854196fbec1386abc4f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 1574742160116233796, guid: b8b6cc4c5fc5d854196fbec1386abc4f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 57.5
       objectReference: {fileID: 0}
     - target: {fileID: 1574742160116233796, guid: b8b6cc4c5fc5d854196fbec1386abc4f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.26
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1574742160116233796, guid: b8b6cc4c5fc5d854196fbec1386abc4f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2521,26 +2509,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mama Sheep
       objectReference: {fileID: 0}
-    - target: {fileID: 5711665397262866722, guid: b8b6cc4c5fc5d854196fbec1386abc4f, type: 3}
-      propertyPath: m_Radius
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5711665397262866722, guid: b8b6cc4c5fc5d854196fbec1386abc4f, type: 3}
-      propertyPath: m_Center.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7875968998741437455, guid: b8b6cc4c5fc5d854196fbec1386abc4f, type: 3}
-      propertyPath: m_Radius
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 9099589852648850979, guid: b8b6cc4c5fc5d854196fbec1386abc4f, type: 3}
-      propertyPath: DefaultScript
-      value: 
-      objectReference: {fileID: 11400000, guid: 69e5b9673e7f3ac40a5025e4a97a8675, type: 2}
-    - target: {fileID: 9099589852648850979, guid: b8b6cc4c5fc5d854196fbec1386abc4f, type: 3}
-      propertyPath: SheeredScript
-      value: 
-      objectReference: {fileID: 11400000, guid: fd761c3f004586a41b08e66884a4d92d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
