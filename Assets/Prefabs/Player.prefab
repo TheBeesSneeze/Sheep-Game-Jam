@@ -28,14 +28,14 @@ Transform:
   m_GameObject: {fileID: 47402941890258404}
   m_LocalRotation: {x: -0.3453965, y: 0, z: 0, w: 0.9384569}
   m_LocalPosition: {x: 0.8313103, y: -0.6, z: 0.22697568}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4201526121502791114}
   - {fileID: 6515938697379820926}
   - {fileID: 537005339050777520}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: -40.412, y: 0, z: 0}
 --- !u!114 &6362982777715349339
 MonoBehaviour:
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbf83635478fe074782bbb73dc67c75b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 10
+  playerSpeed: 40
   jumpHeight: 1
   gravityValue: -9.81
   sensitivity: 20
@@ -182,14 +182,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933250903318743964}
-  m_LocalRotation: {x: 0.34539405, y: 0.0000000025733862, z: -0.0000000069920554, w: 0.9384578}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.26370272, y: 0.60608166, z: 0.22306488, w: 0.7164971}
+  m_LocalPosition: {x: 0, y: 12.000017, z: 5.399993}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8368640123620792878}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 6.171, y: 82.704, z: 40.018}
 --- !u!20 &5993409926452230080
 Camera:
   m_ObjectHideFlags: 0
@@ -273,7 +273,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2993153043126306392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.75, z: 0}
+  m_LocalPosition: {x: 0, y: 25.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -292,6 +292,7 @@ GameObject:
   - component: {fileID: 3825339861853613333}
   - component: {fileID: 2565651052729124945}
   - component: {fileID: 8657489761821493893}
+  - component: {fileID: 5551025669709344648}
   m_Layer: 0
   m_Name: Sheep Turn Towards You Sphere
   m_TagString: Untagged
@@ -353,5 +354,32 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5551025669709344648
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8957300858643274232}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
