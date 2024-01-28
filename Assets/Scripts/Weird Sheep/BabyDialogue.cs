@@ -8,6 +8,8 @@ public class BabyDialogue : DialogueNPCBehaviour
 {
     public override void Exit_text(InputAction.CallbackContext obj)
     {
+        talking = false;
+
         bool sheered = GetComponent<ShearBehaviour>().HasBeenSheered;
         if(sheered)
         {
@@ -21,6 +23,9 @@ public class BabyDialogue : DialogueNPCBehaviour
 
     public override void LeaveText()
     {
+        base.LeaveText();
+        talking = false;
+
         bool sheered = GetComponent<ShearBehaviour>().HasBeenSheered;
         if (!sheered) return;
 
@@ -30,6 +35,9 @@ public class BabyDialogue : DialogueNPCBehaviour
 
     public override void OnDialogueEnd()
     {
+        base.OnDialogueEnd();
+        talking = false;
+
         bool sheered = GetComponent<ShearBehaviour>().HasBeenSheered;
         if (!sheered) return;
 
