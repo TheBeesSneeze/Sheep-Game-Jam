@@ -11,8 +11,7 @@ public class ShearBehaviour : MonoBehaviour
     [SerializeField] private AudioClip shearSound;
     [SerializeField]
     private GameObject babySheep;
-    [SerializeField]
-    private GameObject wolf;
+    [SerializeField] private GameObject wolf;
 
     [Header("Unity")]
     [SerializeField] private List<Rigidbody> wool = new List<Rigidbody>();
@@ -69,6 +68,8 @@ public class ShearBehaviour : MonoBehaviour
 
             Debug.Log("shearing...");
         }
+
+        GameObject.FindObjectOfType<UIManager>().UpdateShearUI();
     }
 
 

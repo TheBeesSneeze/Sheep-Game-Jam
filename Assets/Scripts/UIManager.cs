@@ -1,29 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] public int ShearAmountTotal;
-    [SerializeField] public bool IsWolf;
+    [SerializeField] private int ShearAmountTotal;
+        
+    public List<GameObject> Images = new List<GameObject>();
 
-    //public static void UpdateShearUI()
-    /*{
-        if (!IsWolf)
+    public void UpdateShearUI()
+    {
+        ShearAmountTotal -= 1;
+        Debug.Log("-1");
+
+        Images[0].SetActive(false);
+        Images.RemoveAt(0);
+
+        if (ShearAmountTotal < 1)
         {
-            ShearAmountTotal -= 1;
-            Debug.Log("-1");
-
-            if (ShearAmountTotal < 1)
-            {
-                //lose screen??
-            }
+            SceneManager.LoadScene("LoseScreen");
         }
-
-        if (IsWolf)
-        {
-            //do the end game thing
-        }
-    }*/
+    }
     
 }
