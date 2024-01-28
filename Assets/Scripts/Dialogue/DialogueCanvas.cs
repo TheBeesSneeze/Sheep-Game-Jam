@@ -28,7 +28,7 @@ public class DialogueCanvas : MonoBehaviour
     [SerializeField] private AudioSource dialogueSoundSource;
 
     [Header("Settings")]
-    public static float ScrollSpeed = 0.09f;
+    public static float ScrollSpeed = 0.03f;
 
     [HideInInspector] public bool SkipText;
 

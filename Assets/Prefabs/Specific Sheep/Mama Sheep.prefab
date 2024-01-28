@@ -10,31 +10,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 944335161410584326, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 944335161410584326, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.8
+      value: 25.02
       objectReference: {fileID: 0}
     - target: {fileID: 944335161410584326, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.8
+      value: 25.02
       objectReference: {fileID: 0}
     - target: {fileID: 944335161410584326, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.8
+      value: 25.02
       objectReference: {fileID: 0}
     - target: {fileID: 944335161410584326, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 57.5
       objectReference: {fileID: 0}
     - target: {fileID: 944335161410584326, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 944335161410584326, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -71
       objectReference: {fileID: 0}
     - target: {fileID: 944335161410584326, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -64,9 +64,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6306025873560080480, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6306025873560080480, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6661899112370894743, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_Name
       value: Mama Sheep
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388248336587067233, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+      propertyPath: DefaultScript
+      value: 
+      objectReference: {fileID: 11400000, guid: 69e5b9673e7f3ac40a5025e4a97a8675, type: 2}
+    - target: {fileID: 7388248336587067233, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+      propertyPath: SheeredScript
+      value: 
+      objectReference: {fileID: 11400000, guid: fd761c3f004586a41b08e66884a4d92d, type: 2}
+    - target: {fileID: 8470558856080926029, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+      propertyPath: m_Radius
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 8697455760768867349, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_Controller
