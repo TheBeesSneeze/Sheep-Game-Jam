@@ -21,4 +21,9 @@ public class WolfBehavior : ShearBehaviour
         transform.parent.GetComponent<MeshRenderer>().enabled = false;
         wolf.SetActive(true);
     }
+
+    protected override void UpdateShearUI()
+    {
+        
+    }
 }
