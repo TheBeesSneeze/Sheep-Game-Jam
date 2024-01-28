@@ -323,7 +323,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultScript: {fileID: 11400000, guid: 8b481d54aca86eb418fea62f587f5c40, type: 2}
   SheeredScript: {fileID: 11400000, guid: 8b481d54aca86eb418fea62f587f5c40, type: 2}
-  animator: {fileID: 0}
+  animator: {fileID: 8697455760768867349}
+  talking: 0
 --- !u!114 &4658321341539875070
 MonoBehaviour:
   m_ObjectHideFlags: 0

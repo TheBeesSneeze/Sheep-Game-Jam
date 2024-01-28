@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base Sheep Black
       objectReference: {fileID: 0}
+    - target: {fileID: 7388248336587067233, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 3850922625697925609}
     - target: {fileID: 8866014889285480797, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

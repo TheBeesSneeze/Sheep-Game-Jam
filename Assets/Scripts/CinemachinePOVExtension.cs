@@ -14,7 +14,6 @@ public class CinemachinePOVExtension : CinemachineExtension
 
     private InputManager inputManager;
     private Vector3 startingRotation;
-
     protected override void Awake()
     {
         inputManager = InputManager.Instance;
