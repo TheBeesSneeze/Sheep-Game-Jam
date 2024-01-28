@@ -7,8 +7,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] public int ShearAmountTotal;
     [SerializeField] public bool IsWolf;
 
-    public static void UpdateShearUI()
-    {/*
+    //public static void UpdateShearUI()
+    /*{
         if (!IsWolf)
         {
             ShearAmountTotal -= 1;
@@ -24,6 +24,6 @@ public class UIManager : MonoBehaviour
         {
             //do the end game thing
         }
-    }
-    */
+    }*/
+    
 }

@@ -9,6 +9,10 @@ public class ShearBehaviour : MonoBehaviour
     [SerializeField] private AudioSource sheepAudio;
     [SerializeField] private AudioClip noShearSound;
     [SerializeField] private AudioClip shearSound;
+    [SerializeField]
+    private GameObject babySheep;
+    [SerializeField]
+    private GameObject wolf;
 
     [Header("Unity")]
     [SerializeField] private List<Rigidbody> wool = new List<Rigidbody>();
@@ -38,7 +42,7 @@ public class ShearBehaviour : MonoBehaviour
         }
     }
 
-    public void ShearSheep(InputAction.CallbackContext obj)
+    public virtual void ShearSheep(InputAction.CallbackContext obj)
     {
         if(HasBeenSheered)
         {
@@ -65,7 +69,8 @@ public class ShearBehaviour : MonoBehaviour
 
             Debug.Log("shearing...");
         }
-
-
     }
+
+
+
 }

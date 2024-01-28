@@ -1,18 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class WolfBehavior : ShearBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private GameObject babySheep;
+    [SerializeField]
+    private GameObject wolf;
 
-    // Update is called once per frame
-    void Update()
+    // Start is called before the first frame update
+
+    public override void ShearSheep(InputAction.CallbackContext obj)
     {
-        
+        base.ShearSheep(nputAction.CallbackContext obj);
+        if(HasBeenSheered)
+        {
+            babySheep.SetActive(false);
+            wolf.SetActive(true);
+        }
     }
 }
