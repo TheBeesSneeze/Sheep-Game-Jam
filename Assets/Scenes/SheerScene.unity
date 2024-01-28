@@ -543,6 +543,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 946105181378665655, guid: e8c0d8e13aa71f14284cf823bd3b5c1a, type: 3}
+      propertyPath: ShearAmountTotal
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 946105181378665655, guid: e8c0d8e13aa71f14284cf823bd3b5c1a, type: 3}
       propertyPath: wool.Array.data[0]
       value: 
       objectReference: {fileID: 1806884084}

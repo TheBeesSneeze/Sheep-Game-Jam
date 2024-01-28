@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-//so unfinished sorry guys
-
 public class ShearBehaviour : MonoBehaviour
 {
     [Header("Audio")]
     [SerializeField] private AudioSource sheepAudio;
     [SerializeField] private AudioClip noShearSound;
     [SerializeField] private AudioClip shearSound;
+    [SerializeField]
+    private GameObject babySheep;
+    [SerializeField]
+    private GameObject wolf;
 
     [Header("Unity")]
     [SerializeField] private List<Rigidbody> wool = new List<Rigidbody>();
@@ -40,7 +42,7 @@ public class ShearBehaviour : MonoBehaviour
         }
     }
 
-    public void ShearSheep(InputAction.CallbackContext obj)
+    public virtual void ShearSheep(InputAction.CallbackContext obj)
     {
         if(HasBeenSheered)
         {
@@ -66,8 +68,9 @@ public class ShearBehaviour : MonoBehaviour
             myRB.velocity = speed;
 
             Debug.Log("shearing...");
-        }   
+        }
     }
+
 
 
 }
