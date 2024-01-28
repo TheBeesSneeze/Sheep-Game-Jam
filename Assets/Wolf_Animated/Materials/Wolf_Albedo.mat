@@ -7,10 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SheepNoTalk
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_Parent: {fileID: 2100000, guid: 806219238e85dd142bde11ba4b1853e1, type: 2}
-  m_ModifiedSerializedProperties: 0
+  m_Name: Wolf_Albedo
+  m_Shader: {fileID: 2, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 2100000, guid: c19ce37bb54b73e45890d692ff1cd854, type: 2}
+  m_ModifiedSerializedProperties: 2
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -23,8 +23,8 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a9a20d681d7d1674db1b078625d154f6, type: 3}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: c5c5c0786c6122d4fb5ba726d1429e0f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []

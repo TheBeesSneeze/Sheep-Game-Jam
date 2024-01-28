@@ -112,7 +112,8 @@ public class DialogueCanvas : MonoBehaviour
         Debug.Log("Cancelling speech");
 
         PlayerController.Instance.IgnoreAllInputs = false;
-        currentSheep.SetAnimator(false);
+        //currentSheep.SetAnimator(false);
+        currentSheep.OnDialogueEnd();
 
         dialogueSoundSource.Stop();
 
