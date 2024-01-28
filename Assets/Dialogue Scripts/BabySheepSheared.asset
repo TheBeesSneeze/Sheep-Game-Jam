@@ -13,6 +13,17 @@ MonoBehaviour:
   m_Name: BabySheepSheared
   m_EditorClassIdentifier: 
   TextList:
-  - Rats.
-  CharacterName: Baby Sheep (?)
-  CharacterDialogueSound: {fileID: 8300000, guid: 24933b32f855c9048af22228e684a6a2, type: 3}
+  - alas. you have caught me.
+  - for you, this was all a game
+  - but this was everything for me.
+  - i had no ill intentions towards any of the sheep in this pasture
+  - i merely wanted to fit in
+  - you may just see sheep, dog.
+  - but to me. i see bretheren.
+  - i will leave without a fuss. i understand i am unwelcomed here.
+  - 'i shall return to my shelter.
+
+    there i am equally unwanted.'
+  - goodbye forever.
+  CharacterName: the wolf
+  CharacterDialogueSound: {fileID: 8300000, guid: 4602d7c178542454289b72d7184d53f9, type: 3}
