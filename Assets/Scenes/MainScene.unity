@@ -5906,6 +5906,14 @@ PrefabInstance:
       propertyPath: SheeredScript
       value: 
       objectReference: {fileID: 11400000, guid: 13fc2b619acce944f8f57bcd4bcabc8e, type: 2}
+    - target: {fileID: 1228012527225475656, guid: 395bf9bc70861f84a93806c67add78d5, type: 3}
+      propertyPath: shearSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 89d3ff38cd28a004bbf2d2e237f0d8d7, type: 3}
+    - target: {fileID: 1228012527225475656, guid: 395bf9bc70861f84a93806c67add78d5, type: 3}
+      propertyPath: noShearSound
+      value: 
+      objectReference: {fileID: 8300000, guid: bcf36067aeaceba4e9311685c36d0c7b, type: 3}
     - target: {fileID: 1794894536391681828, guid: 395bf9bc70861f84a93806c67add78d5, type: 3}
       propertyPath: m_Radius
       value: 1
@@ -6685,6 +6693,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TallSheep Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8057423937429632292, guid: 8c3b2578aec70694084c35e294c90d2b, type: 3}
+      propertyPath: noShearSound
+      value: 
+      objectReference: {fileID: 8300000, guid: bcf36067aeaceba4e9311685c36d0c7b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14860,6 +14872,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5127677084712244297, guid: 130ae1d1ce5fd704989d62c0cc5d7851, type: 3}
+      propertyPath: shearSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 89d3ff38cd28a004bbf2d2e237f0d8d7, type: 3}
+    - target: {fileID: 5127677084712244297, guid: 130ae1d1ce5fd704989d62c0cc5d7851, type: 3}
+      propertyPath: noShearSound
+      value: 
+      objectReference: {fileID: 8300000, guid: bcf36067aeaceba4e9311685c36d0c7b, type: 3}
     - target: {fileID: 8507333796584451631, guid: 130ae1d1ce5fd704989d62c0cc5d7851, type: 3}
       propertyPath: m_Name
       value: AngelSheep Variant
@@ -15671,6 +15691,14 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4360750616803990433, guid: 01cc19947a9873d47a5dbbeaa736e2df, type: 3}
+      propertyPath: shearSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 89d3ff38cd28a004bbf2d2e237f0d8d7, type: 3}
+    - target: {fileID: 4360750616803990433, guid: 01cc19947a9873d47a5dbbeaa736e2df, type: 3}
+      propertyPath: noShearSound
+      value: 
+      objectReference: {fileID: 8300000, guid: bcf36067aeaceba4e9311685c36d0c7b, type: 3}
     - target: {fileID: 7071154917026332275, guid: 01cc19947a9873d47a5dbbeaa736e2df, type: 3}
       propertyPath: m_Radius
       value: 0.9

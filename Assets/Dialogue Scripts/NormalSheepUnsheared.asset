@@ -17,4 +17,4 @@ MonoBehaviour:
   - I don't trust Angel Sheep.
   - That sheep scares me, and probably lies about stuff.
   CharacterName: Normal Sheep
-  CharacterDialogueSound: {fileID: 0}
+  CharacterDialogueSound: {fileID: 8300000, guid: 4602d7c178542454289b72d7184d53f9, type: 3}
