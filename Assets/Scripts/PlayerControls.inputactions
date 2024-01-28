@@ -160,6 +160,17 @@
                 },
                 {
                     "name": "",
+                    "id": "1b6b0295-8329-44ba-a1ea-396576f98152",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "2e609c3d-5b4d-428f-818a-39d8652363e7",
                     "path": "<Keyboard>/e",
                     "interactions": "",

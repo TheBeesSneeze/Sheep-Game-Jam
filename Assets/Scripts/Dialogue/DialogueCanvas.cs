@@ -28,7 +28,7 @@ public class DialogueCanvas : MonoBehaviour
     [SerializeField] private AudioSource dialogueSoundSource;
 
     [Header("Settings")]
-    public static float ScrollSpeed = 0.05f;
+    public static float ScrollSpeed = 0.09f;
 
     [HideInInspector] public bool SkipText;
 
@@ -41,6 +41,8 @@ public class DialogueCanvas : MonoBehaviour
     private AudioClip CharacterDialogueSound;
 
     private List<string> TextList = new List<string>();
+
+    private Coroutine typeCoroutine;
 
     private void Awake()
     {
@@ -97,10 +99,9 @@ public class DialogueCanvas : MonoBehaviour
 
         PlayerController.Instance.IgnoreAllInputs = true;
 
-        if (!typing)
-        {
-            StartCoroutine(StartText());
-        }
+        //dialogueCanvas.SetActive(true);
+
+        typeCoroutine = StartCoroutine(StartText());
 
         if (ControlPromptCanvas != null)
             ControlPromptCanvas.SetActive(false);
@@ -111,8 +112,12 @@ public class DialogueCanvas : MonoBehaviour
         Debug.Log("Cancelling speech");
 
         PlayerController.Instance.IgnoreAllInputs = false;
+        currentSheep.SetAnimator(false);
 
         dialogueSoundSource.Stop();
+
+        if(typeCoroutine != null)
+            StopCoroutine(typeCoroutine);
 
         textIndex = 0;
         if (ControlPromptCanvas != null)
@@ -172,10 +177,11 @@ public class DialogueCanvas : MonoBehaviour
 
         Debug.Log("done typing");
         typing = false;
-        
 
         InputManager.Instance.SkipText.started -= Skip_text;
         InputManager.Instance.SkipText.started += Next_Text;
+
+        typeCoroutine = null;
     }
 
     private void PlayTalkingSound()

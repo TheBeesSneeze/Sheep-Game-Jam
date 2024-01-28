@@ -57,6 +57,7 @@ public class DialogueNPCBehaviour : MonoBehaviour
     public virtual void ActivateSpeech(InputAction.CallbackContext obj)
     {
         TurnPlayerTowardsSheep();
+        SetAnimator(true);
 
         ShearBehaviour shear = GetComponent<ShearBehaviour>();
 
@@ -71,6 +72,7 @@ public class DialogueNPCBehaviour : MonoBehaviour
 
         PlayerController.Instance.IgnoreAllInputs = true;
         InputManager.Instance.Talk.started -= ActivateSpeech;
+        InputManager.Instance.Pause.started -= PlayerController.Instance.Pause_started;
         InputManager.Instance.Pause.started += Exit_text;
         
     }
@@ -83,9 +85,11 @@ public class DialogueNPCBehaviour : MonoBehaviour
     public void LeaveText()
     {
         DialogueCanvas.Instance.CancelSpeech();
+        SetAnimator(false);
 
         PlayerController.Instance.IgnoreAllInputs = false;
         InputManager.Instance.Pause.started -= Exit_text;
+        InputManager.Instance.Pause.started += PlayerController.Instance.Pause_started;
         //InputManager.Instance.SkipText.started -= DialogueCanvas.Instance.Skip_text;
     }
 
@@ -97,5 +101,12 @@ public class DialogueNPCBehaviour : MonoBehaviour
         rotate = new Vector3(0, rotate.y , 0);
 
         PlayerController.Instance.transform.eulerAngles = rotate;//Quaternion.Euler(startingRoation.x, transform.rotation.y, startingRoation.z);
+    }
+
+    public virtual void SetAnimator(bool talkingAnimation)
+    {
+        Debug.Log(talkingAnimation);
+        Animator animator = transform.parent.GetComponent<Animator>();
+        animator.SetBool("Talking", talkingAnimation);
     }
 }
