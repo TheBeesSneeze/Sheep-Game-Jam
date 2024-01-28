@@ -58,7 +58,7 @@ public class DialogueNPCBehaviour : MonoBehaviour
         }
     }
 
-    public void ActivateSpeech(InputAction.CallbackContext obj)
+    public virtual void ActivateSpeech(InputAction.CallbackContext obj)
     {
         ShearBehaviour shear = GetComponent<ShearBehaviour>();
 

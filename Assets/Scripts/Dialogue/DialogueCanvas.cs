@@ -96,7 +96,6 @@ public class DialogueCanvas : MonoBehaviour
         Debug.Log("Activating speech");
 
         PlayerController.Instance.IgnoreAllInputs = true;
-        
 
         if (!typing)
         {
@@ -112,6 +111,8 @@ public class DialogueCanvas : MonoBehaviour
         Debug.Log("Cancelling speech");
 
         PlayerController.Instance.IgnoreAllInputs = false;
+
+        dialogueSoundSource.Stop();
 
         textIndex = 0;
         if (ControlPromptCanvas != null)
@@ -144,10 +145,12 @@ public class DialogueCanvas : MonoBehaviour
 
         SkipText = false;
 
-        characterName.text = currentScript.CharacterName;
+        characterName.text = currentScript.CharacterName.ToUpper();
 
         string text = TextList[textIndex];
-        text.ToUpper();
+        text = text.ToUpper();
+
+        PlayTalkingSound();
 
         //typewriter text
         for (int i = 0; i < text.Length + 1; i++)
@@ -162,7 +165,7 @@ public class DialogueCanvas : MonoBehaviour
            
             textBox.text = TextList[textIndex].Substring(0, i);
 
-            PlayTalkingSound();
+            
 
             yield return new WaitForSeconds(ScrollSpeed);
         }
@@ -177,11 +180,12 @@ public class DialogueCanvas : MonoBehaviour
 
     private void PlayTalkingSound()
     {
-        if (dialogueSoundSource == null)
-            return;
+        if (dialogueSoundSource == null) return;
 
-        dialogueSoundSource.Stop();
-        dialogueSoundSource.pitch = Random.value;
+        if (currentScript.CharacterDialogueSound == null) return;
+
+        dialogueSoundSource.clip = currentScript.CharacterDialogueSound;
+        dialogueSoundSource.pitch = Random.Range(0.95f,1.05f);
         dialogueSoundSource.Play();
     }
 
