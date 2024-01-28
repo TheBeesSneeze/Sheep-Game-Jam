@@ -173,8 +173,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sheepAudio: {fileID: 0}
-  noShearSound: {fileID: 0}
-  shearSound: {fileID: 0}
+  noShearSound: {fileID: 8300000, guid: 9bed89ff9debe6146a5a12eb58cadb95, type: 3}
+  shearSound: {fileID: 8300000, guid: 89d3ff38cd28a004bbf2d2e237f0d8d7, type: 3}
   wool:
   - {fileID: 3841371576766401848}
   - {fileID: 3169189402436466923}
@@ -208,6 +208,7 @@ MonoBehaviour:
   DefaultScript: {fileID: 11400000, guid: 5a94d3174d32bc04a8444ce4f62e82e2, type: 2}
   SheeredScript: {fileID: 11400000, guid: 44dc63f041a6cad4ab33c308025f4e69, type: 2}
   animator: {fileID: 4414910521607050617}
+  talking: 0
 --- !u!54 &5657300349433390338 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 825773799338404974, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}

@@ -24,6 +24,8 @@ public class DialogueNPCBehaviour : MonoBehaviour
     [Header("Leave this null")]
     public Animator animator;
 
+    public bool talking;
+
     /// <summary>
     /// when on speaking box, can start text
     /// </summary>
@@ -59,6 +61,8 @@ public class DialogueNPCBehaviour : MonoBehaviour
 
     public virtual void ActivateSpeech(InputAction.CallbackContext obj)
     {
+        talking = true;
+
         TurnPlayerTowardsSheep();
         SetAnimator(true);
 
@@ -82,11 +86,14 @@ public class DialogueNPCBehaviour : MonoBehaviour
 
     public virtual void Exit_text(InputAction.CallbackContext obj)
     {
+        talking = false;
         LeaveText();
     }
 
     public virtual void LeaveText()
     {
+        talking = false;
+
         DialogueCanvas.Instance.CancelSpeech();
         SetAnimator(false);
 
@@ -119,6 +126,7 @@ public class DialogueNPCBehaviour : MonoBehaviour
 
     public virtual void OnDialogueEnd()
     {
-
+        InputManager.Instance.Talk.started += ActivateSpeech;
+        talking = false;
     }
 }

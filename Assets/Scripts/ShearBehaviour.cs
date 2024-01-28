@@ -42,6 +42,8 @@ public class ShearBehaviour : MonoBehaviour
     {
         Debug.Log("shearing");
 
+        if (GetComponent<DialogueNPCBehaviour>().talking) return;
+
         if(HasBeenSheered)
         {
             if(noShearSound != null)
