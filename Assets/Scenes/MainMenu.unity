@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -256, y: 508}
+  m_AnchoredPosition: {x: -157, y: 495}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &182007389
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 133
-  m_fontSizeBase: 133
+  m_fontSize: 95.6
+  m_fontSizeBase: 95.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -692,7 +692,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1134, y: 350}
+  m_AnchoredPosition: {x: -1134, y: 382}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &547876262
@@ -719,7 +719,7 @@ MonoBehaviour:
 
     STARBORN FONT BY DARRELL FLOOD
 
-    ----------------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------------------------------
 
     SOUND:
 
@@ -738,7 +738,9 @@ MonoBehaviour:
     SHEEP
     BY UNIVERSFIELD
 
-    ----------------------------------------------------------------------------------------------
+    TOBY SCREAM BY TOBY
+
+    ---------------------------------------------------------------------------------------------------------------
 
     ART:
 
@@ -750,7 +752,14 @@ MonoBehaviour:
     BARN 3D
     MODEL BY JROBINSON DESIGN
 
-    ----------------------------------------------------------------------------------------------
+    WOODEN FENCE 3D MODEL BY JAROSLAV GRAFSKIY
+
+    GRASS
+    FLOOR MATERIAL BY NOBIAX/YUGHUES
+
+    SKYBOX SERIES FREE BY AVIONX
+
+    ---------------------------------------------------------------------------------------------------------------
 
     SPECIAL
     THANKS:
@@ -784,8 +793,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.15
-  m_fontSizeBase: 36.15
+  m_fontSize: 30.8
+  m_fontSizeBase: 30.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2544,7 +2553,7 @@ MonoBehaviour:
     REISING: ART\n----------------------------------------------------------------------------------------------\nBROOKE
     BOSTER: PROGRAMMER, GAME DESIGNER\n----------------------------------------------------------------------------------------------\nJAMISON
     \"FRESHMAN GAME DESIGNER OF THE YEAR\" PARKS: \nPROGRAMMER, WRITER, GAME DESIGNER\n----------------------------------------------------------------------------------------------\nS(HEEP)KY
-    BEAL: PROGRAMMER"
+    BEAL: PROGRAMMER, ART"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 143815bd107bd76438214801ec8c1eae, type: 2}
   m_sharedMaterial: {fileID: -4259932484926644012, guid: 143815bd107bd76438214801ec8c1eae, type: 2}
