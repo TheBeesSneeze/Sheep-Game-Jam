@@ -15352,6 +15352,10 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9011859383778362657, guid: 038e828beb399b440abac93ed776b477, type: 3}
+      propertyPath: shearSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4602d7c178542454289b72d7184d53f9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
