@@ -15695,26 +15695,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4321949183231502584, guid: 01cc19947a9873d47a5dbbeaa736e2df, type: 3}
-      propertyPath: m_Radius
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4321949183231502584, guid: 01cc19947a9873d47a5dbbeaa736e2df, type: 3}
-      propertyPath: m_Center.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4360750616803990433, guid: 01cc19947a9873d47a5dbbeaa736e2df, type: 3}
-      propertyPath: shearSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 89d3ff38cd28a004bbf2d2e237f0d8d7, type: 3}
-    - target: {fileID: 4360750616803990433, guid: 01cc19947a9873d47a5dbbeaa736e2df, type: 3}
-      propertyPath: noShearSound
-      value: 
-      objectReference: {fileID: 8300000, guid: bcf36067aeaceba4e9311685c36d0c7b, type: 3}
-    - target: {fileID: 7071154917026332275, guid: 01cc19947a9873d47a5dbbeaa736e2df, type: 3}
-      propertyPath: m_Radius
-      value: 0.9
-      objectReference: {fileID: 0}
     - target: {fileID: 7211325411565245511, guid: 01cc19947a9873d47a5dbbeaa736e2df, type: 3}
       propertyPath: m_Name
       value: UpsidedownSheep
