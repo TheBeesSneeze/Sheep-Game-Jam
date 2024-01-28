@@ -126,6 +126,7 @@ public class DialogueNPCBehaviour : MonoBehaviour
 
     public virtual void OnDialogueEnd()
     {
+        SetAnimator(false);
         InputManager.Instance.Talk.started += ActivateSpeech;
         talking = false;
     }
