@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: CamoflaugeSheepSheared
   m_EditorClassIdentifier: 
   TextList:
-  - I can not return to my wife.
-  - She thinks I am at war, but I can not return to her yet.
-  - Since there is a conspiracy afoot! Really Tall Sheep is hiding something.
-  - "Something about the way he talks... \nIt's like he's hiding secret codes..."
-  - Or something.
+  - Ouuughghghhhhhh
+  - Tell my wife...
+  - Really Tall Sheep must be stopped!
+  - I *KNOW* he's hiding something!
+  - Specifically, a secret message within the first letter of every word he says.
+  - Blegh.
   CharacterName: Camoflauge Sheep
   CharacterDialogueSound: {fileID: 8300000, guid: 769d98aacacaa6847b04c110d82f2b8f, type: 3}
