@@ -7,6 +7,8 @@ public class CardboardBehaviour : DialogueNPCBehaviour
 {
     public override void ActivateSpeech(InputAction.CallbackContext obj)
     {
-        //Animator.
+        Animator cardboard = transform.parent.GetComponent<Animator>();
+
+        cardboard.SetTrigger("Fall Over");
     }
 }
