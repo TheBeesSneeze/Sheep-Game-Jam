@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadGame()
     {
-        SceneManager.LoadScene("MamasScene");
+        SceneManager.LoadScene("MainScene");
         PlayerController.Instance.UnPause();
     }
 
