@@ -21,6 +21,9 @@ public class DialogueNPCBehaviour : MonoBehaviour
     public NPCScript DefaultScript;
     public NPCScript SheeredScript;
 
+    [Header("Leave this null")]
+    public Animator animator;
+
     /// <summary>
     /// when on speaking box, can start text
     /// </summary>
@@ -105,8 +108,12 @@ public class DialogueNPCBehaviour : MonoBehaviour
 
     public virtual void SetAnimator(bool talkingAnimation)
     {
-        Debug.Log(talkingAnimation);
-        Animator animator = transform.parent.GetComponent<Animator>();
-        animator.SetBool("Talking", talkingAnimation);
+        if(animator == null)
+        {
+            Animator animator = transform.parent.GetComponent<Animator>();
+        }
+        
+        if(animator != null)
+            animator.SetBool("Talking", talkingAnimation);
     }
 }

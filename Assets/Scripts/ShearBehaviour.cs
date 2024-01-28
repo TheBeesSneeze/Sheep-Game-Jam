@@ -6,9 +6,9 @@ using UnityEngine.InputSystem;
 public class ShearBehaviour : MonoBehaviour
 {
     [Header("Audio")]
-    [SerializeField] private AudioSource sheepAudio;
-    [SerializeField] private AudioClip noShearSound;
-    [SerializeField] private AudioClip shearSound;
+    [SerializeField] protected AudioSource sheepAudio;
+    [SerializeField] protected AudioClip noShearSound;
+    [SerializeField] protected AudioClip shearSound;
 
     [Header("Unity")]
     [SerializeField] private List<Rigidbody> wool = new List<Rigidbody>();
@@ -40,10 +40,13 @@ public class ShearBehaviour : MonoBehaviour
 
     public virtual void ShearSheep(InputAction.CallbackContext obj)
     {
+        Debug.Log("shearing");
+
         if(HasBeenSheered)
         {
-            AudioSource.PlayClipAtPoint(noShearSound, transform.position, 100);
-            Debug.Log("sorry, no more wool");
+            if(noShearSound != null)
+                AudioSource.PlayClipAtPoint(noShearSound, transform.position, 100);
+
             return;
         }
 
@@ -68,7 +71,11 @@ public class ShearBehaviour : MonoBehaviour
             Debug.Log("shearing...");
         }
 
-        GameObject.FindObjectOfType<UIManager>().UpdateShearUI();
+        UIManager ui = GameObject.FindObjectOfType<UIManager>();
+        if (ui != null)
+        {
+            ui.UpdateShearUI();
+        }
     }
 
 

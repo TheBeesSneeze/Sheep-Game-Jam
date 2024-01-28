@@ -14,15 +14,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 944335161410584326, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.8
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 944335161410584326, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.8
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 944335161410584326, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.8
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 944335161410584326, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64,10 +64,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4658321341539875070, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+      propertyPath: wool.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6661899112370894743, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_Name
-      value: Mama Sheep
+      value: Naked Sheep
       objectReference: {fileID: 0}
+    - target: {fileID: 7388248336587067233, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 6950173094615668055}
+    - target: {fileID: 7388248336587067233, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+      propertyPath: DefaultScript
+      value: 
+      objectReference: {fileID: 11400000, guid: 182c23b987cafc2409e5fcfb3eb8dcf3, type: 2}
+    - target: {fileID: 7388248336587067233, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+      propertyPath: SheeredScript
+      value: 
+      objectReference: {fileID: 11400000, guid: 3507787f09247464e876be663b606b1b, type: 2}
     - target: {fileID: 8697455760768867349, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
       propertyPath: m_Controller
       value: 
@@ -76,8 +92,40 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 806219238e85dd142bde11ba4b1853e1, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedComponents:
+    - {fileID: 4658321341539875070, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 5430247483941448900, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1051718398011177219, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9011859383778362657}
   m_SourcePrefab: {fileID: 100100000, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+--- !u!1 &1610067903350321217 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1051718398011177219, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+  m_PrefabInstance: {fileID: 1783540307619924290}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9011859383778362657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610067903350321217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9500ae82ecc84be45a2b6e7d8a2024fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sheepAudio: {fileID: 0}
+  noShearSound: {fileID: 8300000, guid: bcf36067aeaceba4e9311685c36d0c7b, type: 3}
+  shearSound: {fileID: 8300000, guid: 89d3ff38cd28a004bbf2d2e237f0d8d7, type: 3}
+  wool: []
+  HasBeenSheered: 0
+--- !u!95 &6950173094615668055 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8697455760768867349, guid: 12803e5ab3bbc3644bd9cdc8e806c1fd, type: 3}
+  m_PrefabInstance: {fileID: 1783540307619924290}
+  m_PrefabAsset: {fileID: 0}
