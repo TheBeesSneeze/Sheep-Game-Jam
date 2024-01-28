@@ -37,6 +37,6 @@ public class GameManager : MonoBehaviour
 
     public void LoadWakeUpScene2()
     {
-        SceneManager.LoadScene("WakeUpScene2");
+        SceneManager.LoadScene("WakeUp2");
     }
 }

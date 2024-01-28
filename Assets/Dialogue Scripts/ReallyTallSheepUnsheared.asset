@@ -16,4 +16,4 @@ MonoBehaviour:
   - "I am mad!\r"
   - Look yonder, in nearby grass!
   CharacterName: Really Tall Sheep
-  CharacterDialogueSound: {fileID: 0}
+  CharacterDialogueSound: {fileID: 8300000, guid: 85e039e9cc47d2442b8a1fab995bcfe6, type: 3}
