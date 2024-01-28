@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextList:
   - Now I have more wool to knit a hat for my baby!
+  - I hope he's staying warm at college.
   CharacterName: Mama Sheep
   CharacterDialogueSound: {fileID: 8300000, guid: 4602d7c178542454289b72d7184d53f9, type: 3}
