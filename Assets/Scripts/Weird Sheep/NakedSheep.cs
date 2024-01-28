@@ -5,7 +5,8 @@ using UnityEngine.InputSystem;
 
 public class NakedSheep : ShearBehaviour
 {
-    public Shader shader;
+    public MeshRenderer mesh;
+    public Material skin;
     public override void ShearSheep(InputAction.CallbackContext obj)
     {
         Debug.Log("shearing naked");
@@ -29,5 +30,7 @@ public class NakedSheep : ShearBehaviour
 
         //Material material = transform.parent.GetComponent<Material>();
         //shader.Albedo
+        //mesh.material.color = Color.red;
+        mesh.materials[0] = skin;
     }
 }
