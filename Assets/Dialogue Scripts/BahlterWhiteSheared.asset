@@ -13,6 +13,20 @@ MonoBehaviour:
   m_Name: BahlterWhiteSheared
   m_EditorClassIdentifier: 
   TextList:
-  - '*Sobs*'
+  - I am not the wolf! I know he swapped out those numbers! I knew it was 15. One
+    after 14. As if I could ever make such a mistake.
+  - Never. Never! I just - I just couldn't prove it. He - he covered his tracks,
+    he got that idiot in the bushes to lie for him.
+  - You think this is something? You think this is bad? This? This sheepcanery? He's
+    done worse.
+  - That cardboard cutout! Are you telling me that a sheep just happens to fall like
+    that? No! He orchestrated it! Really Tall Sheep!
+  - He was stuck up in the clouds! And I saved him! And I shouldn't have. I took
+    him into my own grassy knoll! What was I thinking?
+  - He'll never change. He'll never change! Ever since he was 9, always the same!
+    Couldn't keep his hooves out of the hay bale!
+  - But not our Tally! Couldn't be precious Tally! Stealing them blind! And he gets
+    to be a sheep!? What a sick joke!
+  - I should've stopped him when I had the chance! And you - you have to stop him!
   CharacterName: Wahlter White
   CharacterDialogueSound: {fileID: 8300000, guid: 769d98aacacaa6847b04c110d82f2b8f, type: 3}
