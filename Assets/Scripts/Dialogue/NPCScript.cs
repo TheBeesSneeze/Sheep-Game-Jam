@@ -17,5 +17,9 @@ public class NPCScript : ScriptableObject
 
     public string CharacterName;
 
+    public bool IsNormal;
+
     public AudioClip CharacterDialogueSound;
+    public AudioClip CharacterDialogueSound2;
+    public AudioClip CharacterDialogueSound3;
 }

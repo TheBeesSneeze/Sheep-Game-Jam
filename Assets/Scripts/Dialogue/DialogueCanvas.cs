@@ -192,6 +192,15 @@ public class DialogueCanvas : MonoBehaviour
         if (currentScript.CharacterDialogueSound == null) return;
 
         dialogueSoundSource.clip = currentScript.CharacterDialogueSound;
+        if(currentScript.IsNormal)
+        {
+            if (textIndex == 0)
+                dialogueSoundSource.clip = currentScript.CharacterDialogueSound;
+            if (textIndex == 1)
+                dialogueSoundSource.clip = currentScript.CharacterDialogueSound2;
+            if (textIndex == 2)
+                dialogueSoundSource.clip = currentScript.CharacterDialogueSound3;
+        }
         dialogueSoundSource.pitch = Random.Range(0.95f,1.05f);
         dialogueSoundSource.Play();
     }

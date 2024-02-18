@@ -16,4 +16,7 @@ MonoBehaviour:
   - Angel Sheep sure is not someone to be trusted!
   - Ah man, I sure do love telling the truth all the time ;D
   CharacterName: Normal Sheep
-  CharacterDialogueSound: {fileID: 8300000, guid: 4602d7c178542454289b72d7184d53f9, type: 3}
+  IsNormal: 1
+  CharacterDialogueSound: {fileID: 8300000, guid: 8c3356a85b054b4438a4cddf27bd0959, type: 3}
+  CharacterDialogueSound2: {fileID: 8300000, guid: 6d393f37844606f4bb6b01731102e7a6, type: 3}
+  CharacterDialogueSound3: {fileID: 0}
